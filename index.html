@@ -1,0 +1,2353 @@
+<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<!--<br><br>[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <!<br><br>[endif]-->
+<html>
+<head>
+<title>江茂綸-個人網頁</title>
+<!--mobile apps-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="江茂綸-個人網頁" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--mobile apps-->
+<!--Custom Theme files-->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/swipebox.css">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<!--//Custom Theme files-->
+<!--js-->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->
+<!--web-fonts-->
+<link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--//web-fonts-->
+<!--start-smooth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+			
+			function setCarousel() {
+				var imageUrl = Array("b1","b2","b3","b4");
+				var i=0;
+				time = setInterval(function(){
+					$('.banner').css({
+						'background': 'url(../teacher/images/'+imageUrl[i]+'.jpg)no-repeat center 0px',
+						'-webkit-background-size': 'cover',
+						'background-size': 'cover',
+						'-moz-background-size': 'cover',
+						'position': 'relative'
+					});
+					if (i >= 3) {
+						i=0;
+					} else {
+						i++;
+					}
+				},3000);
+			}
+			setCarousel();
+		});
+</script>
+<!--//end-smooth-scrolling-->
+</head>
+<body>
+	<!--banner-->
+	<div id="home" class="banner" >
+		<div class="banner-info">
+			<div class="container">
+				<div class="col-md-4 header-left">
+					<img src="images/img1.jpg" alt=""/>
+				</div>
+				<div class="col-md-8 header-right">
+					<h2>Hello</h2>
+					<h1>江茂綸 教授</h1>
+					<h6>Mao-Lun Chiang</h6>
+					<ul class="address">
+						<li>
+							<ul class="address-text">
+								<li><b>學歷</b></li>
+								<li>國立中興大學資訊科學與工程博士</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>聯絡資訊</b></li>
+								<li>04-22196373</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>Email</b></li>
+								<li>mlchiang@nutc.edu.tw</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>研究領域</b></li>
+								<li style="font-size:16px">雲端運算、行動通訊與計算、電腦網路、網路安全、智慧物聯網及深度學習與區塊鏈</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//banner-->
+	<!--top-nav-->
+	<div class="top-nav wow">
+		<div class="container">
+			<div class="navbar-header logo">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					Menu
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="menu">
+					<ul class="nav navbar">
+						<li><a href="#work" class="scroll">工作經歷</a></li>
+						<li><a href="#about" class="scroll">個人著作</a></li>
+						<li><a href="#skills" class="scroll">團隊技能</a></li>
+						<li><a href="#projects" class="scroll">計畫/產學</a></li>
+						<li><a href="#students" class="scroll">指導學生</a></li>
+						<li><a href="#course" class="scroll">課程專區</a></li>
+						<li><a href="#honor" class="scroll">榮譽</a></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!--//top-nav-->
+	
+	<!--work-experience-->
+	<div id="work" class="work">
+		<div class="container">
+			<h3 class="title">工作經歷</h3>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2021/08 - 至今 </h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-briefcase"> </span> 台中科技大學 / AI學位學程教授兼推廣部推廣教育組組長</h5>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2020/08 - 2021/07 </h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-briefcase"> </span> 朝陽科技大學 / 教授兼系主任</h5>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2018/08 - 2020/07 </h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-briefcase"> </span> 朝陽科技大學 / 副教授兼系主任</h5>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2017/08 - 2018/07 </h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-briefcase"> </span> 朝陽科技大學 / 副教授</h5>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2015/08 - 2017/07 </h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-briefcase"> </span> 朝陽科技大學 / 副教授兼招生中心主任</h5>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2009/08 - 2015/07</h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-briefcase"> </span>朝陽科技大學 / 助理教授</h5>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2008/08 - 2009/07 </h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-briefcase"> </span>慈濟技術學院 / 助理教授</h5>
+				</div>
+				<div class="clearfix"> </div>
+			</div><div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2007/08 - 2008/06 </h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-briefcase"> </span>國立中興大學 / 資訊管理系兼任講師</h5>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2007/08 - 2008/06 </h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-briefcase"> </span>國立中興大學 / 會計系兼任講師</h5>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2006/08 - 2007/06 </h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-briefcase"> </span>國立中興大學 / 資訊管理系兼任講師</h5>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2006/08 - 2007/06 </h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-briefcase"> </span>國立中興大學 / 企業管理系兼任講師</h5>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//work-experience-->
+	<!--about-->
+	<div id="about" class="about">
+		<div class="container">
+			<h3 class="title">個人著作</h3>
+			<div class="col-md-12 about-left title"><h3 style=" color: #008B8B;"><b>期刊論文</b></h3></div>
+			<div class="col-md-12 about-left"><br>
+				<font style="font-size:18px">
+						[1].	Mao-Lun Chiang, Hui-Ching Hsieh, Yu-Huei Cheng, Wei-Ling Lin, Bo-Hao Zeng, “Improvement of tasks scheduling algorithm based on load balancing candidate method under cloud computing environment,” Expert Systems with Applications, Vol. 212, February 2023, pp. 118714. (SCIE; 2022 Impact Factor: 8.665)
+						<br><br>[2].	Zhao-Ping Peng, Mao-Lun Chiang, Iuon-Chang Lin, Chou-Chen Yang, Min-Shiang Hwang*, “CBP2P: Cooperative Electronic Bank Payment Systems Based on Blockchain Technology,” Journal of Internet Technology, Vol.23 No.4, July 2022, pp. 683-692. (SCIE; 2021 Impact Factor: 1.140)
+						<br><br>[3].	Wen-Chung Tsai, Tzu-Hsuan Tsai, Te-Jen Wang, and Mao-Lun Chiang*, “Automatic Key Update Mechanism for Lightweight M2M Communication and Enhancement of IoT Security: A Case Study of CoAP Using Libcoap Library,” Sensors, Vol. 22, No 1, Jan. 2022, pp. 340. (SCIE; 2020 Impact Factor: 3.576). 22. 340. 10.3390/s22010340.
+						<br><br>[4].	Hui-Ching Hsieh, Mao-Lun Chiang*, Tzu-Yang Chang, “Improving the Fault-Tolerance of Software-Defined Networks with Dynamic Overlay Agreement,” Cluster Computing, Vol. 24, 19 Apr. 2021, pp. 2597-2614. (SCIE; 2019 Impact Factor: 3.458)
+						<br><br>[5].	Chin-Ling Chen*, Ching-Ying Lin, Mao-Lun Chiang*, Yong-Yuan Deng*, Peizhi Chen, Yi-Jui Chiu, “A traceable online will system based on blockchain and smart contract technology,” symmetry, Vol.13, No. 3, Mar. 2021, pp.466. (SCI: 2020 Impact Factor: 2.645)
+						<br><br>[6].	Chin-Ling Chen, Mao-Lun Chiang*, Yong-Yuan Deng, Wei Weng, Kunhao Wang, Ching-Cheng Liu, “A traceable firearm management system based on blockchain and IoT technology,” symmetry, Vol.13, No. 3, 439, Mar. 2021. (SCIE: 2020 Impact Factor: 2.645)
+						<br><br>[7].	Shu-Ching Wang, Wei-Ling Lin, Chun-Hung Hsieh, Mao-Lun Chiang, and Tung-Shou Chen, “The enhancement of agricultural productivity using the intelligent IoT,” International Journal of Applied Science and Engineering, Vol. 18, No. 1, 2021 (Scopus; Engineering: Q2)
+						<br><br>[8].	Hung-Yu Chien, Pei-Chih Lin, and Mao-Lun Chiang, “Efficient MQTT platform facilitating secure Group communication, Journal of internet technology, Vol. 21, No.7, Dec. 2020, pp.1929-1940. (SCIE; 2020 Impact Factor:0.786)
+						<br><br>[9].	Shu-Ching Wang*, Wei-Ling Lin, Mao-Lun Chiang* and Shin-Jie Wang, “Improve Data Storage Efficiency with Service-oriented Architecture underlying the Internet of Things,” International Journal of Applied Science and Engineering, Vol. 17, No. 2, May 2020, pp. 191-206. (Scopus; Engineering: Q2)
+						<br><br>[10].	Shu-Ching Wang, Yu-Ling Lin, Mao-Lun Chiang and Shin-Hung Pan, “Improve the Stability of the Internet of Things using Dynamic Load Balancing Clustering,” International Journal of Innovative Computing, Information and Control (IJICIC), Vol. 16, No. 1, 2020, pp. 63-76. (2018 SJR=35.67%)
+						<br><br>[11].	Wen-Chung Tsai*, Sao-Jie Chen, Yu-Hen Hu, Mao-Lun Chiang*, “Network-Cognitive Traffic Control: A Fluidity-aware On-chip Communication,” Electronics 9(10), Oct. 2020, pp.1~25 (SCIE; 2019 Impact Factor: 0.715) 
+						<br><br>[12].	Chin-Ling Chen, Mao-Lun Chiang*, Hui-Ching Hsie,·Ching-Cheng Liu, Yong-Yuan Deng, “A lightweight mutual authentication with wearable device in location-based mobile edge computing” Wireless Personal Communications, Vol. 113, May 8, 2020, pp. 575-598. (SCIE; 2018 Impact Factor: 1.061)
+						<br><br>[13].	Chin-Ling Chen, Mao-Lun Chiang*, Chuan-Bi Lin*, “The High Performance of Task Scheduling Algorithm Using Reference Queues for Cloud-Computing Data Centers,” Electronics, Feb. 2020, Vol. 9, No. 1, Article ID 371, pp.1-17. (SCIE; 2018 Impact Factor: 1.764)
+						<br><br>[14].	Hung-Yu Chien, Yi-Jui Chen, Guo-Hao Qiu, Jian Fu Liao, Ruo-Wei Hung, Pei-Chih Lin, Xi-An Kou, Mao-Lun Chiang, Chun Hua Su, “A MQTT-API-Compatible IoT Security-Enhanced Platform”, International Journal of Sensor Networks (IJSNET), Vol.32, issue 1, January 2020, pp. 54-68. (SCIE; 2019 Impact Factor: 1.428; Telecommunications; Rank Factor 43/135)
+						<br><br>[15].	Hui-Ching Hsieh, Mao-Lun Chiang*, Weng-Chung Tsai and Yen-Chiu Chen, “A Feature-Oriented Fault Diagnosis Agreement Protocol in Distributed Systems,” Journal of Internet Technology, Vol. 20, No. 5, Oct. 2019, pp.1401-1413. (SCIE; 2019 Impact Factor: 0.715). 
+						<br><br>[16].	Shu-Ching Wang, Wei-Shu Hsiung, Mao-Lun Chiang*, and Yao-Te Tsai*, “Early Stopping Fault Diagnosis Agreement on Wireless Sensor Network of IoT”, International Journal of Innovative Computing, Information and Control, Vol. 15, No. 4, Aug. 2019, pp. 1351-1364. (EI; Scopus)
+						<br><br>[17].	Yao-Te Tsai, Shu-Ching Wang, Mao-Lun Chiang, “Reaching Fault Diagnosis Consensus on a Multiple Damage Unreliable Wireless Sensor Network,” International Journal of Applied Science and Engineering, Vol. 16, No. 1, June 2019, pp. 57-67. (EI, Scopus) 
+						<br><br>[18].	Wen-Chung Tsai, Mao-Lun Chiang, Shi-Xiang Zhu, and Nien-Ting Huang, “An Implementation of Hardware Accelerated Serial Interface of IoT Gateway for Enabling Machine-Type Communication – A Case Study of Networking IR Controllable Home Appliances,” Journal of Computer Networks and Communications, Volume 2019, Article ID 1506237, 13 pages. (Scopus)
+						<br><br>[19].	Hui-Ching Hsieh and Mao-Lun Chiang*, “The Incremental Load Balance Cloud Algorithm by Using Dynamic Data Deployment,” Journal of Grid Computing, Volume 17, issue 3, March 2019, pp. 553-575. (SCIE; 2018 Impact Factor: 3.288) DOI: 10.1007/s10723-019-09474-2.
+						<br><br>[20].	Shu Ching Wang, Mao Lun Chiang, Kuo Qin Yan, Yao Te Tsai, “Fault-diagnosis and Decision Making Algorithm for Determining Faulty Nodes in Malicious and Dormant Wireless Sensor Networks,” Journal of Internet Technology, Vol. 19, No. 7, Dec. 2018, pp.2135-2145. (SCIE; 2016 Impact Factor: 1.930) 
+						<br><br>[21].	Mao-Lun Chiang, Yung-Fa Huang, Hui-Ching Hsieh, and Weng-Chung Tsai, “High Reliable and Efficient Three Layer Cloud Dispatching Architecture in the Heterogeneous Cloud Computing Environment”, Applied Science, Vol.8(8), 1385, Aug. 2018, pp.1-15. (SCIE; 2018 Impact Factor: 2.217)
+						<br><br>[22].	Mao-Lun Chiang, “A Secure Service Agreement underlying Cloud Computing Environment,” Journal of Internet Technology, Vol. 19, No. 6, Nov. 2018, pp.1753-1761. (SCIE; 2017 Impact Factor: 1.301)
+						<br><br>[23].	Mao-Lun Chiang, Hui-Ching Hsieh, and Chun-Wei Wang, “Improving the Fault-Tolerance Under Software-Defined Network Based on New Sight of Agreement Protocol,” IEEE ACCESS, Vol. 6, July 2018, pp. 40898-40908. (SCIE; 2018 Impact Factor: 4.098)
+						<br><br>[24].	Mao-Lun Chiang, Chin-Ling Chen, and Hui-Ching Hsieh, “An Agreement Under Early Stopping and Fault Diagnosis Protocol in a Cloud Computing Environment,” IEEE ACCESS, Vol. 6, July 2018, pp. 44868-44875. (SCIE; 2018 Impact Factor: 4.098)
+						<br><br>[25].	Tsui-Ping Chang, Chih-Hung Chang, and Mao-Lun Chiang, “An Enhancing XML Big Data Mining Approach on Spark System,” International Journal of Advances in Electronics and Computer Science (IJAECS), Vol.4, Issue 10, Oct. pp.17-21, 2017.
+						<br><br>[26].	Mao-Lun Chiang, “The diagnosis of consensus agreement in a MANET,” International Journal of Ad Hoc and Ubiquitous Computing, Vol. 26, No. 2, 2017, pp.82-92. (SCIE; 2017 Impact Factor: 3.557).
+						<br><br>[27].	Chin-Ling Chen, Mao-Lun Chiang, De-Kui Li and Wei-Chech Lin, “A Novel Lottery Protocol for Mobile Environment,” Computers & Electrical Engineering, 49, Jan. 2016, pp. 146-160. (SCIE; 2016 Impact Factor: 1.570)
+						<br><br>[28].	Chin-Ling Chen, Mao-Lun Chiang, Chun-Cheng Peng, Chun-Hsin Chang and Qing-Ru Sui, A secure mutual authentication scheme with non-repudiation for vehicular ad hoc networks, International journal of communication systems, Nov. 2015. (2013 SCIE JCR IF: 1.106) 
+						<br><br>[29].	Hui-Ching Hsieh and Mao-Lun Chiang, “New approach to improve the generalized byzantine agreement problem,” International Journal of Computer Theory and Engineering, Vol.7, No. 2, Apr. 2015, pp.120-125. (EI)
+						<br><br>[30].	Chin-Ling Chen, Tsai-Tung Yang, Mao-Lun Chiang and Tzay-Farn Shih, A Privacy Authentication Scheme Based on Cloud for Medical Environment, Journal of Medical Systems, Vol. 38, No. 11, Nov. 2014, pp.1-16 (Article 143). (SCI; 2013 JCR Impact Factor: 1.372.)
+						<br><br>[31].	Mao-Lun Chiang, “Efficient Diagnosis Protocol to Enhance the Reliability of a Cloud Computing Environment,” Journal of Network and Systems Management, Vol. 20, Issue 4, 2012, pp.579-600. (SCI; 2013 JCR Impact Factor: 0.438) 
+						<br><br>[32].	Chao-Liang Liu, Ting-Yi Chang, Mao-Lun Chiang, and Ceng-Jung Tsai, “A Simple Keystroke Dynamics-Based Authentication System Using Means and Standard Deviations,” Journal of Internet Technology, Vol.13, No. 3, May 2012, pp.439-444. (SCI; 2013 JCR Impact Factor: 0.418) 
+						<br><br>[33].	Mao-Lun Chiang and H. C. Hsieh, “A New Approach to the Fault Detection Problem for Mobile P2P Network,” Information Technology and Control, Vol.41, No. 2, 2012, pp. 151-161. (SCI; 2013 JCR Impact Factor: 0.813) 
+						<br><br>[34].	Mao-Lun Chiang, Shun-Sheng Wang, Shu-Ching Wang, and Hsi-Hua Liang, “Performance Enhancement of WiMAX by Three Layers Topology,” International Journal of Mobile Communications, Vol. 11, Issue 1, Dec. 2013, pp.89-106. (SSCI; 2013 TR Impact Factor: 1.221) 
+						<br><br>[35].	Hui-Ching Hsieh and Mao-Lun Chiang, “A New Solution for the Byzantine Agreement Problem,” Journal of Parallel and Distributed Computing, Vol. 71, No.10, Oct. 2011, pp.1261-1277. (SCI; 2013 JCR Impact Factor: 1.011)
+						<br><br>[36].	Mao-Lun Chiang, Shu-Ching Wang, and Lin-Yu Tseng, “The Anatomy Study of Consensus Agreement in MANETs,” Computer & Electrical Engineering, Vol. 36, No.1, January 2010, pp.234-253. (SCI; 2013 JCR Impact Factor: 0.992)
+						<br><br>[37].	Ting-Yi Chang and Mao-Lun Chiang, “Attack and Improve the Zhao-Liu Authenticated Encryption Scheme,” International Journal of Innovative Computing, Information and Control, Vol.5, No.10, October 2009, pp.3025-3030. (SCI; 2009 JCR Impact Factor: 1.664) 
+						<br><br>[38].	Mao-Lun Chiang, and Shu-Ching Wang, “Hybrid Consensus Agreement on CDS-based Mobile Ad-hoc Network,” International Journal of Innovative Computing, Information and Control, Vol. 5, No. 8, Aug. 2009, pp.2291-2309. (SCI; 2009 JCR Impact Factor: 1.664)
+						<br><br>[39].	Mao-Lun Chiang, Shu-Ching Wang, and Lin-Yu Tseng, “An Early Fault Diagnosis Agreement under Hybrid Fault Model,” Expert Systems with Applications, Vol.36, No.3, Part1, Apr. 2009, pp.5039-5050. (SCI; 2009 JCR Impact Factor: 1.924)
+						<br><br>[40].	Kuo-Qin Yan, Shu-Ching Wang, Mao-Lun Chiang, and Lin-Yu Tseng, “A Fuzzy-Based Power-Aware Management for Mobile Ad Hoc Networks,” Computer Standards & Interfaces, Vol. 31, No. 1, Jan. 2009, pp.209-218. (SCI; 2009 JCR Impact Factor: 0.825)
+						<br><br>[41].	Mao-Lun Chiang, Shu-Ching Wang, and Lin-Yu Tseng, “The Incremental Agreement,” Information Processing Letters, Vol. 107, No. 5, Aug. 2008, pp.165-170. (SCI; 2008 JCR Impact Factor: 0.612)
+						<br><br>[42].	Kuo-Qin Yan, Shu-Ching. Wang, and Mao-Lun Chiang, “Optimal Agreement in a Scale-Free Network Environment,” Informatica International Journal, Vol. 17, No. 1, Apr. 2006, pp.137-150. (SCI; 2006 JCR Impact Factor: 1.786)
+						<br><br>[43].	Shu-Ching Wang, Mao-Lun Chiang, and Kuo-Qin Yan, “Streets of consensus under unknown unreliable network,” ACM Operating Systems Review, Vol. 39, No. 4, Oct. 2005, pp.80-96. (EI)
+						<br><br>[44].	Kuo-Qin Yan, Shu-Ching Wang, and Mao-Lun Chiang, “New Application of Reliable Agreement underlying an Unsecured Business Environment,” ACM Operating Systems Review, Vol. 38, No. 3, July 2004, pp.42-57. (EI)
+					</font><br><br>
+			</div>
+			<div class="col-md-12 about-left title"><h3 style=" color: #008B8B;"><b>國際性會議論文</b></h3></div>
+			<div class="col-md-12 about-left"><br>
+				<font style="font-size:18px">
+					<br><br>[45].	Mao-Lun Chiang, Bo-Ren Huang, Hong-Wei Chen, Hui-Ching Hsieh, Ting-Yi Chang, “Study of Adaptive Dynamic Replication Mechanism in Mobile Edge Computing Environment,” 2019 IEEE international conference on applied system innovation, Fukuoka, Japan, Apr. 11-15, 2019. Pre-Proceedings
+					<br><br>[46].	Mao-Lun Chiang, Chin-Feng Lee, Ting-You Lin, Somya Agrawal. “A Survey of Bus Arrival Time Prediction Methods” Security with Intelligent Computing and Big-data Services, December 4-6, New Taipei City, Taiwan, 2019 (SICBS'19).
+					<br><br>[47].	Hung-Yu Chien, Xi-An Kou, Mao-Lun Chiang, Chun-hua Su. “Secure and Efficient MQTT Group Communication Design” 20th IEEE/ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing (SNPD). Toyama, Japan, 8-10 Jul. 2019, pp.26.
+					<br><br>[48].	Mao-Lun Chiang, Shu-Ching Wang, Yun-Ju Chan, “An Empirical Study of Consumer’s Behavioral Intention of Mobile Payment-Based on the Technology Acceptance Model and Perceived Risk” The 13th International Conference on Advanced Information Technologies (AIT 2019), pp.134.
+					<br><br>[49].	Mao-Lun Chiang, Ze-Yu Chen, Hui-Ching Hsieh and Tsui-Ping Chang, “Nominate connected dominating set algorithm in mobile Ad Hoc network,” Smart Innovation, Systems and Technologies, 109, 2019, pp.233-240. (Scopus, EI)
+					<br><br>[50].	Mao-Lun Chiang, Yu-an Lin, Hui-Ching Hsieh and Weng-Chung Tsai, “Improving latency and reliability for vehicle system under fog computing networks,” Smart Innovation, Systems and Technologies, 109, 2019, pp.225-232. (Scopus, EI)
+					<br><br>[51].	Chin-Ling Chen, Ching-Cheng Liu, Mao-Lun Chiang, Dong-Peng Lin. “Migrating Replica and Authentication with Privacy and Lightweight Verification in Mobile Edge Computing” 2018 International Conference on Innovation, Communication and Engineering (2018ICICE). Hangzhou, China, 9-14 Nov. 2018, pp.34.
+					<br><br>[52].	Mao-Lun Chiang, Hui-Ching Hsieh, Wen-Chung Tsai, Ming-Ching Ke, “An Improved Task Scheduling and Load Balancing Algorithm under the Heterogeneous Cloud Computing Network” 2017 IEEE 8th International Conference on Awareness Science and Technology(iCAST2017), Taichung, Taiwan, 8-10 Nov. 2017, pp. 61.
+					<br><br>[53].	Weng-Chung Tsai, Nien-Ting Huang, Shih-Hsuan Lin, Mao-Lun Chiang, ”An Implementation of Relay Function based on LTE Technology for Multi-UAV Communication,” The First International Conference on Smart Vehicular Technology, Transportation, Communication and Applications November 6-8, 2017 Kaohsiung, Taiwan (VTCA 2017). 
+					<br><br>[54].	Hsin-Chieh Wu, Shih-Hao Tung, Mao-Lun Chiang, “Developing Intelligent Physical Workload Evaluation System Based on Heart Rate,” The 3rd International Conference on Ambient Intelligence and Ergonomics in Asia, 12-25 August 2017, Kyoto Women’s University, Japan.
+					<br><br>[55].	Mao-Lun Chiang, Hui-Ching Hsieh, Xin-Zhi Lin “An Improvement Connected Dominating Set Algorithm by Relative Complement in Ad Hoc Network,” International Conference on Engineering & Technology, Computer, Basic & Applied Sciences (ECBA-2017), Vol. 409, Issue 12, Osaka, Japan, 24-25 Jan. 2017, pp.18.
+					<br><br>[56].	Mao-Lun Chiang, Hui-Ching Hsieh, Chun-Wei Wang “New Sight Path-Based Byzantine Agreement Protocol under Software-Defined Network,” International Conference on Engineering & Technology, Computer, Basic & Applied Sciences (ECBA-2017),Vol. 409, Issue 12, Osaka, Japan, 24-25 Jan. 2017, pp.19. 
+					<br><br>[57].	Mao-Lun Chiang, Hui-Ching Hsieh, Tzu-Yang Cheng “Restudy the Byzantine Agreement Problem under Multi-Controller Groups Software-Defined Networks,” International Conference on Engineering & Technology, Computer, Basic & Applied Sciences (ECBA-2017), Vol. 409, Issue 12, Osaka, Japan, 24-25 Jan. 2017, pp.20.
+					<br><br>[58].	Mao-Lun Chiang, Tsui-Ping Chang, Chun-Nan Lin, Shih-Hsuan Lin, “Improved the Availability and Performance of Scheduling Algorithms for Heterogeneous Cluster in a Cloud Computing Environment,” The international conference on Innovation and Management (IAM2015S), Sapporo, Japan, 14-17 July 2015, pp.122.
+					<br><br>[59].	Mao-Lun Chiang, Chun-Cheng Peng, Cheng-Jung Tsai “A Mobile Monitoring System for Elders’ Care,” The 3rd International Scientific Conference on Engineering and Applied Sciences, Okinawa, Japan, 29-31 2015 July, pp.27.
+					<br><br>[60].	Cheng-Jung Tsai, Ting-Yi Chang, Chun-Cheng Peng, Han-Sing Wu, Mao-Lun Chiang, “A New Approach of Changeable Password for Keystroke Dynamics Authentication System on Smart Phones,” Chinacom 2014, Moming, China, August 14-16, 2014. 
+					<br><br>[61].	Mao-Lun Chiang, Hui-Ching Hsieh, Chun-Cheng Peng, “A Fault-Tolerant Algorithm for Agreement in CDS-Based Mobile Ad-hoc Networks,” Chinacom 2014, Moming, China, August 14-16, 2014.
+					<br><br>[62].	Mao-Lun Chiang, Ji-An Luo, Chuan-Bi Lin, “High-Reliable Dispatching Mechanisms for Tasks in Cloud Computing,” BAI2013 International Conference on Business and Information, Bali, Indonesia, July 7-9, 2013, pp.73.
+					<br><br>[63].	Mao-Lun Chiang, Li-Chieh Chang, Chuan-Bi Lin*, “Dynamic Data Replication Accessing Schemes in Cloud Computing,” BAI2013 International Conference on Business and Information, Bali, Indonesia, July 7-9, 2013, pp.73.
+					<br><br>[64].	Chuan-Bi Lin, Kun-Wei Chen, Mao-Lun Chiang*, “MaxSufferage Selection Based Connected Dominating Set for Ad hoc Wireless Networks,” BAI2013 International Conference on Business and Information, Bali, Indonesia, July 7-9, 2013, pp.73.
+					<br><br>[65].	Mao-Lun Chiang, Chuan-Bi Lin*, Jian-Wei Lin, Chia-Cin Chang, Tz-Han Chen, “The Fair-based Dispatching Architecture in Cloud Computing,” BAI2012 International Conference on Business and Information, Sapporo, Japan, July 3-5, 2012, pp.102.
+					<br><br>[66].	Chuan-Bi Lin, Mao-Lun Chiang*, Jian-Wei Lin, and Hsin I Lee, “Weight-based Dispatching Algorithm for Queued Cloud Computing,” 2011 The International Conference on Computer, Consumer, and Control, and Evolutionary Computing, Taichung, Taiwan, Jul. 3-5, 2012, pp.6.
+					<br><br>[67].	Mao-Lun Chiang, Chuan-Bi Lin, Ye-Rue Chen, and Yu-Chen Chang, “Dynamic Dispatching Mechanism for Differentiated Services in Cloud Clusters,” 2011 The Fifth International Conference on Genetic and Evolutionary Computing, Kinmen, Taiwan, August 29 - 30, 2011.(EI)
+					<br><br>[68].	Kuo-Qin Yan, Shu-Ching Wang, Mao-Lun Chiang, Shun-Shen Wang, and Se Hua. Tsai, “Security Enhancement by Cipher-Based Authentication and Key Agreement in a Cloud Computing Environment,” BAI2011 International Conference on Business and Information, Bangkok, Thailand, July 4-6, 2011, pp.34. (best paper award) 
+					<br><br>[69].	Mao-Lun Chiang, Chuan-Bin Lin, Ye-Run Chen, and Yu-Chen Chang, “Efficient Dynamic Election Mechanisms in Cloud Computing Environment,” 2011 International Conference on Business and Information, Bangkok, Thailand, July 4-6, 2011, pp.64.
+					<br><br>[70].	Chuan-Bi Lin, Mao-Lun Chiang, and Hsin. I. Lee, “Design of Dispatching Schemes and Queues for Cloud Computing,” 2011 International Conference on Business and Information, Bangkok, Thailand, July 4-6, 2011, pp.64.
+					<br><br>[71].	Mao-Lun Chiang, Shu-Ching Wang, Kuo-Qin Yan and Hua Hei Liang, “Efficient Clustering Mechanism for WiMAX Network,” 2010 3rd IEEE International Conference on Computer Science and Information Technology (IEEE ICCSIT 2010), Chengdu, China, July 9-11, 2010, pp.119-123.(EI)
+
+					</font><br><br>
+			</div>
+			<div class="col-md-12 about-left title"><h3 style=" color: #008B8B;"><b>國內會議論文</b></h3></div>
+			<div class="col-md-12 about-left"><br>
+				<font style="font-size:18px">
+					[72].	Zhi-Ming Huang, Mao-Lun Chiang, Hui-Ching Hsieh, Chun-Cheng Peng, "Predict Bitcoin price using LSTM model based on attention and technical indicators", Artificial Intelligence Technology and Application (AITA 2022), Taiwan, 20 May. 2022, pp. XX.(accepted) [本人為通訊作者]
+					<br><br>[73].	Chu-Yun Kou, Mao-Lun Chiang, Hui-Ching Hsieh, Chun-Cheng Peng, "Vaccine Passport System Construction Architecture Based on PBFT Consensus Blockchain Scheme", Artificial Intelligence Technology and Application (AITA 2022), Taiwan, 20 May. 2022, pp. XX. (accepted) [本人為通訊作者]
+					<br><br>[74].	Mao-Lun Chiang, Hong-Wei Chen, Hui-Ching Hsieh, “Weight-based Connection Restoration Algorithm for Wireless Sensors and Actor Networks”, The 16th Workshop on Wireless, Ad-Hoc and Sensor Networks (WASN 2021), Taiwan, 23-24 Aug. 2021, pp. 19.
+					<br><br>[75].	Mao-Lun Chiang, Yi-Chang Liu, Hui-Ching Hsieh, "Prediction of Bus Travel Time Using Time Classification-based Time Series Artificial Neural Network", The 16th Workshop on Wireless, Ad-Hoc and Sensor Networks (WASN 2021), Taiwan, 23-24 Aug. 2021, pp. 18.
+					<br><br>[76].	Mao-Lun Chiang, Yi-Hsin Lin, Hui-Ching Hsieh, "The Stable Cluster Head Selection Mechanism for Improving the Network Lifetime in VANET Environment", The 16th Workshop on Wireless, Ad-Hoc and Sensor Networks (WASN 2021), Taiwan, 23-24 Aug. 2021, pp. 20.
+					<br><br>[77].	黃鉑衽、陳軍佑、曾柏豪、林培誌、江茂綸、張庭毅，“物聯網居家自走清潔車”, 2018第十九屆民生電子研討會暨科技部專題計畫學門成果發表會, pp.287-291, Taiwan, Nov. 16-17, 2018.
+					<br><br>[78].	寇錫銨、劉景承、古貴伃、江茂綸、張庭毅、張慧豪，“多功能置物櫃租用系統”, 2018第十九屆民生電子研討會暨科技部專題計畫學門成果發表會, pp.278-281, Taiwan, Nov. 16-17, 2018.
+					<br><br>[79].	江茂綸、林育安、張瑞升、陳書堯、陳柏翔、陳冠伯、陳宏瑋、張庭毅、楊喬惠，“物聯網結合unity使健身娛樂腳踏車提升互動娛樂之效果”, 2017第十一屆資訊科技國際研討會暨第七屆台灣網路智能學會學術論壇, Taiwan, April 22, 2017, pp.28.
+					<br><br>[80].	江茂綸、柯名璟、黃亭瑜、陳廷勳、彭唯致、彭兆平、張庭毅、趙志成，“MoLoSport搭配Unity結合物聯網技術以提升使用者健身運動之遊戲性”, 2017第十一屆資訊科技國際研討會暨第七屆台灣網路智能學會學術論壇, Taiwan, April 22, 2017, pp.36.
+					<br><br>[81].	江茂綸、王君瑋、倪千茹、林育安、林大為、朱世豪、史可華、凃浩軒、洪偉淇，“結合物聯網及Google Map之室內腳踏車旅遊行程之應用”, 2016第十屆資訊科技國際研討會 暨 第六屆台灣網路智能學會學術論壇, Taiwan, April 24-25, 2016, pp.841. 
+					<br><br>[82].	江茂綸、林仕軒、李仁傑、黃奕傑、林信志、呂竟鴻、蔡燦鴻、張庭毅， “智慧型長者照護監控系統”, 2015資訊科技國際研討會暨民生電子論壇 (AIT/CEF 2015), Taiwan, April 24-25, 2015, pp.A-26.
+					<br><br>[83].	江茂綸、鄭子暘、周詩函、吳彥青、王君瑋、林文耀、陳映淞、張庭毅， “雲端分散式爬蟲之索引-以專利局為例”, 2015資訊科技國際研討會暨民生電子論壇 (AIT/CEF 2015), Taiwan, April 24-25, 2015, pp.A-25.
+					<br><br>[84].	江茂綸、張立傑、鐘子智、洪梓奇、林昭宏、陳中岳、涂凱翔、張智凱，“透過兩階層雲端動態路徑策略以降低展場之擁塞機率”, 2014第八屆資訊科技國際研討會 (AIT2014), Taiwan, April 18-19, 2014, pp. 40.
+					<br><br>[85].	江茂綸、林仕軒、曾莉雅、曾駿宏、黃俊傑、楊書泓、劉宏軒、楊博皓， “俱安全性之雲端服務行動祕書平台”, 2014第八屆資訊科技國際研討會 (AIT2014), Taiwan, April 18-19, 2014, pp.40.
+					<br><br>[86].	江茂綸、鐘子智、黃琮勝、羅際安、沈聿容、盧皓威、劉駿成， “消防監測雲端平台之實作”, 2013第七屆資訊科技國際研討會(AIT2013), Taiwan, April 26-27, 2013, pp.31.
+					<br><br>[87].	江茂綸、潘信宏、張立傑、吳致瑋、蔡明田、詹榮哲、楊士毅， “智慧型裝置於雲端運算之應用-以餐廳搜尋為例”, 2013第七屆資訊科技國際研討會 (AIT2013), Taiwan, April 26-27, 2013, pp.32. 
+					<br><br>[88].	江茂綸、林傳筆、王永祥、林仕軒、陳堃維、曾莉雅、陳昱凱、陳思綸， “雲端市集隨選應用服務提供平台”, 2013第七屆資訊科技國際研討會 (AIT2013), Taiwan, April 26-27, 2013, pp.33. 
+					<br><br>[89].	王淑卿、李金鳳、江茂綸、曾莉雅、留旻懋、洪瑋修、簡輝銘、毛上仁， “建構雲端資源管理整合平台-以Hadoop為例”, 2013第七屆資訊科技國際研討會 (AIT2013), Taiwan, April 26-27, 2013, pp. 36. 
+					<br><br>[90].	江茂綸、林傳筆、張立傑、陳堃維、段宇豪， “校園雲端運算提供平台服務之研究”, 2012資訊科技國際研討會暨第二屆網路智能與應用研討會(AIT2012), Taiwan, April 27-28, 2012, pp. 67.
+					<br><br>[91].	江茂綸、李建緯、賴資翔、張振榮、羅際安，“雲端運算服務應用於教室借用系統”, 2012資訊科技國際研討會暨第二屆網路智能與應用研討會(AIT2012), Taiwan, April 27-28, 2012, pp. 85.
+					<br><br>[92].	林傳筆、江茂綸、朱修宏、陳勝宏、郭尚銘、卓家詮，“提高雲端架構之運算效率”, 2012資訊科技國際研討會暨第二屆網路智能與應用研討會(AIT2012), Taiwan, April 27-28, 2012, pp. 132.
+					<br><br>[93].	張家濟、江茂綸、林信豪，“設計並實作無線感測陣列平台於空氣品質監測”, 2012資訊科技國際研討會暨第二屆網路智能與應用研討會(AIT2012), Taiwan, April 27-28, 2012, pp. 131. 
+					<br><br>[94].	鄭培成、林俊豪、張庭毅、江茂綸、蔡政容，“擊鍵特徵於觸控手持行動裝置之身分認證”，2011 The International Conference on Advanced Information Technologies, Taiwan, April 22-23, 2011, pp. 152.
+					<br><br>[95].	林傳筆、江茂綸、張運晟, “建置虛擬化佇列管理架構於雲端運算”, 2011資訊科技國際研討會(AIT2011), Taiwan, April 22-23, 2011, pp. 96.
+					<br><br>[96].	江茂綸、張庭毅、陳彥儒, “服務節點選擇機制應用於階層式雲端運算環境”, 2011資訊科技國際研討會(AIT2011), Taiwan, April 22-23, 2011, pp. 94. 
+					<br><br>[97].	Shu-Ching Wang、Mao-Lun Chiang、Kuo-Qin Yan、Shun-Shen Wang、Se Hua Tsai, “A New Group Key Authentication Protocol in an Insecure Cloud Computing Environment”, 2011年資訊科技國際研討會(AIT2011)，朝陽科技大學, April 22-23, 2011, pp.127.
+					<br><br>[98].	王淑卿、江茂綸、嚴國慶、王順生、蔡思豪，“以模糊函數建構動態安全風險管理模式提升雲端運算環境的安全性，”第22屆國際資訊管理學術研討會，朝陽科技大學，May 21, 2011, pp.44.
+					<br><br>[99].	王淑卿、王順生、嚴國慶、江茂綸、蔡思豪，“以基於加密的認證與金鑰協議提升雲端運算環境資訊通訊及認證的安全，” 2011電子商務與數位生活研討會（ECDL2011），實踐大學, March 4, 2011, pp.503-512.
+					<br><br>[100].	王淑卿、江茂綸、嚴國慶、王順生、蔡思豪，“以混和式動態凱薩加密系統提升雲端運算環境中資料儲存的安全，”第十六屆資訊管理暨實務研討會，雲林科技大學, Dec. 11, 2010, pp.387-399.
+					<br><br>[101].	鐘子智、汪清國，江茂綸，“網路數位教材與學習伙伴機器人之音效控制協同架構，”悅趣化數位學習國際學術研討會(JEL 2011)，國立臺灣師範大學，Jan. 1, 2011.
+					<br><br>[102].	江茂綸、陳彥儒，“以服務區塊提昇雲端運算架構之效能”，The 15th Mobile Computing Workshop (MC2010)，National Taichung University，May 28, 2010.
+					<br><br>[103].	王淑卿、嚴國慶、江茂綸、林宜屏，“以數位化行銷提昇企業經營之競爭優勢，”第十一屆管理學域學術研討會，朝陽科技大學，May 4, 2010.
+					<br><br>[104].	許祐福、鄭培成、江茂綸、胡芸菁、張庭毅，“應用改良式株落選擇演算法同時組裝平行測驗”，2010資訊科技國際研討會(AIT2010), Taiwan, April 23-24, 2010, pp. 120. 
+					<br><br>[105].	Mao-Lun Chiang, Shu-Ching Wang, Kuo-Qin Yan, Chin Ping Huang and Lin-Yu Tseng, “The New Territory of Agreement with Fallible Processes in a Cloud Computing”，2010年資訊科技國際研討會，朝陽科技大學，April 23-24, 2010, pp. 6. (ISBN: 978-986-7043-30-6)
+					<br><br>[106].	Shu-Ching Wang, Huei-Jyun Lyu, Kuo-Qin Yan, Mao-Lun Chiang, Shun-Shen Wang, “Enhancing the Quality of Data Grid Service with Node Selection Mechanism,” 2010年資訊科技國際研討會，朝陽科技大學，April 23-24, 2009, pp. 33.
+					<br><br>[107].	王淑卿、嚴國慶、江茂綸、陳慶維，“在階層式雲端運算網路拓樸中以工作排程機制提昇系統資源配置之效能，”銘傳大學2010國際學術研討會，銘傳大學，March 12, 2010, pp.120-130.
+					<br><br>[108].	王淑卿、嚴國慶、王順生、陳慶維、江茂綸，“在三階層式雲端運算網路拓樸架構下負載平衡機制之研究，”2009資訊系統應用學術研討會,中國科技大學, Dec. 18, 2009.
+					<br><br>[109].	王淑卿、呂彗君、嚴國慶、王順生、江茂綸，“在分群導向資料網格環境下以I/O暫存機制提昇資料儲存的服務品質,” 2009電子化企業實務研討暨論文發表會，台南科技大學，Dec. 17, 2009.
+					<br><br>[110].	嚴國慶、王淑卿、江茂綸、林宜屏、王順生，“網路電話行銷之新思維-以Skype網路電話為例,” 2009電子化企業實務研討暨論文發表會，台南科技大學，Dec. 17, 2009.
+					<br><br>[111].	專書著作(具ISSN/ISBN) 文書處理Word 2010:邁向MOS國際認證/江茂綸、趙文華、林家德、JYiC認證研究團隊編著，新北市，台科大圖書，2012，04，ISBN 978-986-308-155-5。
+
+					</font><br><br>
+			</div>
+		</div>
+	</div>
+	<!--//about-->
+	<!--skills-->
+	<div id="skills" class="skills">
+		<div class="container">
+			<h3 class="title">團隊技能</h3>
+			<div class="skills-info">
+				<div class="col-md-6 bar-grids">
+					<h6>Distributed Parallel Computing<span> 100% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 100%">
+						</div>
+					</div>
+					<h6>Mobile Communications and Computing<span> 100% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 100%">
+						</div>
+					</div>
+					<h6>Computer Networks<span> 100% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 100%">
+						</div>
+					</div>
+					<h6>Ad Hoc<span> 100% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 100%">
+						</div>
+					</div>
+					<h6>PHP<span> 100% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 100%">
+						</div>
+					</div>
+					<h6>Jquery / AJAX<span> 100% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 100%">
+						</div>
+					</div>
+					<h6>HTML / CSS<span>100% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 100%">
+						</div>
+					</div>
+					<h6>MVC Framework(Laravel、Angular)<span> 100% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 100%">
+						</div>
+					</div>
+					<h6>A.I. Artificial Intelligence<span> 60% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 60%">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 bar-grids">
+					<h6>Fault Tolerant Operation System<span> 100% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 100%">
+						</div>
+					</div>
+					<h6>Cloud Computing / Big Data<span> 70% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 70%">
+						</div>
+					</div>
+					<h6>Electronic Commerce<span> 100% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 100%">
+						</div>
+					</div>
+					<h6>IOS<span> 80% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 80%">
+						</div>
+					</div>
+					<h6>Unity<span> 80% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 80%">
+						</div>
+					</div>
+					<h6>IOT<span>80% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 80%">
+						</div>
+					</div>
+					<h6>Android<span> 90% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 90%">
+						</div>
+					</div>
+					<h6>Node.JS<span> 100% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 100%">
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//education-->
+	<!--portfolio-->
+	<div id="projects" class="portfolio">
+		<div class="container">
+			<h3 class="title wow zoomInLeft animated" data-wow-delay=".5s">計畫/產學</h3>
+			<div class="sap_tabs">			
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+					<ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">
+						<li class="resp-tab-item"><span>作品預覽</span></li>
+						<li class="resp-tab-item"><span>計畫</span></li>
+						<li class="resp-tab-item"><span>產學</span></li>			
+					</ul>	
+					<div class="clearfix"> </div>	
+					<div class="resp-tabs-container">
+						<div class="tab-1 resp-tab-content">
+							<div class="col-md-12 about-left title"><h3 style=" color: #008B8B;"><b>產學  </b><a href="file/20210509作品集.pdf" target="_blank"><button type="button" class="btn btn-primary btn-xs">作品集下載</button></a></h3></div>
+							<div class="tab_img">
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/工單追蹤與製令排單模擬驗證用數位雙生模組開發.jpeg" class="swipebox" title="工單追蹤與製令排單模擬驗證用數位雙生模組開發，工業技術研究院-智慧機械科技中心(智慧製造技術組)">
+											<img src="images/工單追蹤與製令排單模擬驗證用數位雙生模組開發.jpeg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>工單追蹤與製令排單模擬驗證用數位雙生模組開發，工業技術研究院-智慧機械科技中心(智慧製造技術組)</h3>
+												<p>110/05/01~110/11/30</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/線上課程系統維護案.jpeg" class="swipebox" title="線上課程系統維護案，大道文創有限公司">
+											<img src="images/線上課程系統維護案.jpeg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>線上課程系統維護案，大道文創有限公司</h3>
+												<p>111/04/01~111/09/30</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/前端網頁設計及功能開發調整.jpeg" class="swipebox" title="前端網頁設計及功能開發調整，工業技術研究院-智慧機械科技中心(智慧製造技術組)">
+											<img src="images/前端網頁設計及功能開發調整.jpeg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>前端網頁設計及功能開發調整，工業技術研究院-智慧機械科技中心(智慧製造技術組)</h3>
+												<p>110/08/01~110/11/30</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/RQ滅火器巡檢系統.jpeg" class="swipebox" title="RQ滅火器巡檢系統，佛教慈濟醫療財團法人">
+											<img src="images/RQ滅火器巡檢系統.jpeg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>RQ滅火器巡檢系統，佛教慈濟醫療財團法人</h3>
+												<p>110/05/01~110/6/30</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/建立地端資訊支援系統.jpeg" class="swipebox" title="建立地端資訊支援系統，工業技術研究院-智慧機械科技中心(智慧製造技術組)">
+											<img src="images/建立地端資訊支援系統.jpeg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>建立地端資訊支援系統，工業技術研究院-智慧機械科技中心(智慧製造技術組)</h3>
+												<p>110/03/01~110/11/30</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/多媒體數位教材製作計畫.jpeg" class="swipebox" title="多媒體數位教材製作計畫，創意未來科技股份有限公司">
+											<img src="images/多媒體數位教材製作計畫.jpeg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>多媒體數位教材製作計畫，創意未來科技股份有限公司</h3>
+												<p>109/09/25~110/01/15</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/數據平台可視化建置.jpeg" class="swipebox" title="數據平台可視化建置，工業技術研究院">
+											<img src="images/數據平台可視化建置.jpeg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>數據平台可視化建置，工業技術研究院</h3>
+												<p>109/06/01~109/11/30</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/j11.jpg" class="swipebox" title="血壓器APP建置計畫，宏人仁醫醫療器械設備有限公司">
+											<img src="images/j11.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>血壓器APP建置計畫，宏人仁醫醫療器械設備有限公司</h3>
+												<p>109/01/13~109/04/23</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/j10.jpg" class="swipebox" title="APP建置計畫，奕傑電子股份有限公司">
+											<img src="images/j10.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>APP建置計畫，奕傑電子股份有限公司</h3>
+												<p>108/05/01~108/12/31</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/j9.jpg" class="swipebox" title="APP建置計畫，雅太實業有限公司">
+											<img src="images/j9.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>APP建置計畫，雅太實業有限公司</h3>
+												<p>108/02/20~108/05/31</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/j8.jpg" class="swipebox" title="課教務管理系統，偉格圖書">
+											<img src="images/j8.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>課教務管理系統，偉格圖書</h3>
+												<p>108/02/01~108/12/31</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/j7.jpg" class="swipebox" title="鄉政營造展示網頁建置計畫，嘉義縣水上鄉公所">
+											<img src="images/j7.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>鄉政營造展示網頁建置計畫，嘉義縣水上鄉公所</h3>
+												<p>107/11/01~108/02/28</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/j6.jpg" class="swipebox" title="Unity數位學習教材之建置計畫，力鯨科技有限公司">
+											<img src="images/j6.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>Unity數位學習教材之建置計畫，力鯨科技有限公司</h3>
+												<p>106/06/1~106/11/31</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/j5.jpg" class="swipebox" title="飯店管理系統之建置計畫，聚志科技有限公司">
+											<img src="images/j5.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>飯店管理系統之建置計畫，聚志科技有限公司</h3>
+												<p>105/10/01~106/10/01</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/iscome1.jpg" class="swipebox" title="經費擴充模組之開發計畫-精緻教師專業發展評鑑網，采威國際資訊股份有限公司">
+											<img src="images/iscome1.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>經費擴充模組之開發計畫-精緻教師專業發展評鑑網，采威國際資訊股份有限公司</h3>
+												<p>104/12~105/06</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/tranews1.jpg" class="swipebox" title="大台灣電子商城建置計畫-幸福特約店家APP，大台灣旅遊網股份有限公司">
+											<img src="images/tranews1.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>大台灣電子商城建置計畫-幸福特約店家APP，大台灣旅遊網股份有限公司</h3>
+												<p>103/11/01~104/05/31</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/tranews4.jpg" class="swipebox" title="大台灣電子商城建置計畫-24H購幸福商城，大台灣旅遊網股份有限公司">
+											<img src="images/tranews4.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>大台灣電子商城建置計畫-24H購幸福商城，大台灣旅遊網股份有限公司</h3>
+												<p>103/11/01~104/05/31</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/j1.png" class="swipebox" title="教學平台安全分析建置計畫，碁峰資訊股份有限公司">
+											<img src="images/j1.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>教學平台安全分析建置計畫，碁峰資訊股份有限公司</h3>
+												<p>102/08/01~103/07/31</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/cbs1.jpg" class="swipebox" title="洋學苑網站平台建置計畫，洋學苑教育顧問有限公司">
+											<img src="images/cbs1.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>洋學苑網站平台建置計畫，洋學苑教育顧問有限公司</h3>
+												<p>102/07/05~102/10/5</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/j3.png" class="swipebox" title="教學平台安全分析建置計畫，勁園國際股份有限公司">
+											<img src="images/j3.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>教學平台安全分析建置計畫，勁園國際股份有限公司</h3>
+												<p>101/08/01~102/07/31</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/j2.png" class="swipebox" title="VeeTime光纖網路建設普查計畫，威達雲端電訊股份有限公司">
+											<img src="images/j2.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>VeeTime光纖網路建設普查計畫，威達雲端電訊股份有限公司</h3>
+												<p>101/3/23~101/4/10</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/j3.png" class="swipebox" title="數位內容教學平台建置計畫，勁園國際股份有限公司">
+											<img src="images/j3.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>數位內容教學平台建置計畫，勁園國際股份有限公司</h3>
+												<p>100/08/01~101/07/31</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/j4.png" class="swipebox" title="數位影音製作計畫，台科大圖書股份有限公司">
+											<img src="images/j4.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>數位影音製作計畫，台科大圖書股份有限公司</h3>
+												<p>98/11/15~99/10/31</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<br>
+							</div>
+						</div>
+						<div class="tab-1 resp-tab-content">
+							<div class="tab_img">
+								<table class="table table-sm">
+									<thead>
+										<tr class="danger">
+											<th>計畫編號</th>
+											<th width="40%">計畫名稱</th>
+											<th>單位</th>
+											<th>期間</th>
+											<th>職位</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="success">
+											<th></th>
+											<th width="40%">「110年產業人才培訓據點計畫-人工智慧物聯網技術與應用據點-AI人工智慧資料分析應用實務班」</th>
+											<th></th>
+											<th></th>
+											<th>協同計畫主持人</th>
+										</tr>
+										<tr class="info">
+											<th>109-2221-E-324 -021</th>
+											<th width="40%">區塊鏈在醫療服務整合應用之研究</th>
+											<th>科技部</th>
+											<th>109/08/01~110/07/31</th>
+											<th>共同主持人</th>
+										</tr>
+										<tr class="success">
+											<th></th>
+											<th width="40%">108學年度深耕智慧型健康促進產品研發及人才培育計畫-物聯網智能化健康促進產品與技術</th>
+											<th>教育部</th>
+											<th>108/08/01~109/07/31</th>
+											<th>子計畫主持人</th>
+										</tr>
+										<tr class="info">
+											<th></th>
+											<th width="40%">107學年度深耕智慧型健康促進產品研發及人才培育計畫-物聯網智能化健康促進產品與技術</th>
+											<th>教育部</th>
+											<th>107/08/01~108/07/31</th>
+											<th>子計畫主持人</th>
+										</tr>
+										<tr class="success">
+											<th>107CFD2800002</th>
+											<th width="40%">Zenbo智慧機器人結合影像辨識與物聯網回收裝置之回收物分類系統(大專學生研究計畫)</th>
+											<th>科技部</th>
+											<th>107/07/01~108/02/28</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th></th>
+											<th width="40%">105學年度教育部資訊志工團隊計畫第一梯次通過</th>
+											<th>教育部</th>
+											<th>105/08/01~106/05/31</th>
+											<th>領隊</th>
+										</tr>
+										<tr class="success">
+											<th></th>
+											<th width="40%">朝陽科技大學校級重點特色計畫-管理學院「朝陽銀髮園服務模式發展計畫」子計畫三共同主持人</th>
+											<th>朝陽科大管理學院</th>
+											<th>105/02~107/01</th>
+											<th>共同主持人</th>
+										</tr>
+										<tr class="info">
+											<th>MOST103-2632-E-324-001-MY3</th>
+											<th width="40%">提升私校研發能量專案計畫(整合型計畫)- 建構智慧安全之銀髮健康照顧服務系統-以朝陽科大銀髮園為例--子計畫四「整合行動安全、生理安全及資訊安全於銀髮園服務之創新應用」</th>
+											<th>科技部</th>
+											<th>103/08/01~106/07/31</th>
+											<th>子計畫四共同主持人</th>
+										</tr>
+										<tr class="success">
+											<th>MOST 103-2221-E-324-022-</th>
+											<th width="40%">動態任務排程演算法於異質性雲端運算環境與錯誤診斷之探討</th>
+											<th>科技部</th>
+											<th>103/08/01~104/07/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th></th>
+											<th width="40%">104學年度教育部資訊志工團隊計畫第一梯次通過</th>
+											<th>教育部</th>
+											<th>103/07/15~104/05/31</th>
+											<th>領隊</th>
+										</tr>
+										<tr class="success">
+											<th>MOST103-2815-C-324-013-E</th>
+											<th width="40%">於Hadoop雲端運算架構下之分散式網路爬蟲之探討(大專學生研究計畫)</th>
+											<th>科技部</th>
+											<th>103/07/01~104/02/28</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th></th>
+											<th width="40%">103學年度教育部資訊志工團隊計畫第一梯次通過</th>
+											<th>教育部</th>
+											<th>103/06/01~104/05/31</th>
+											<th>領隊</th>
+										</tr>
+										<tr class="success">
+											<th>MOST102-2221-E-324-014-</th>
+											<th width="40%">於雲端運算環境中探討有效複本儲存效率與負載平衡之研究</th>
+											<th>科技部</th>
+											<th>102/08/01~103/07/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th></th>
+											<th width="40%">102學年度教育部資訊志工團隊計畫第四梯次通過</th>
+											<th>教育部</th>
+											<th>102/07/01~103/05/31</th>
+											<th>領隊</th>
+										</tr>
+										<tr class="success">
+											<th>YJ102-15</th>
+											<th width="40%">102學年度補助大專校院辦理就業學程計畫-網路規劃與實務暨國際證照班就業學程</th>
+											<th>教育部</th>
+											<th>102/07/01~103/08/31</th>
+											<th>協同主持人</th>
+										</tr>
+										<tr class="info">
+											<th></th>
+											<th width="40%">101學年度教育部資訊志工團隊計畫第四梯次通過</th>
+											<th>教育部</th>
+											<th>101/09/01~102/05/31</th>
+											<th>領隊</th>
+										</tr>
+										<tr class="success">
+											<th></th>
+											<th width="40%">朝陽科技大學101學年度第1學期學生學習社群核定通過</th>
+											<th>朝陽科大</th>
+											<th>101/08/01~102/07/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th></th>
+											<th width="40%">101年度中區技職校院區域教學資源中心第三梯次校際專業證照輔導課程補助</th>
+											<th>教育部</th>
+											<th>101/06/01~102/07/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="success">
+											<th>NSC99-2221-E-324-041-MY3</th>
+											<th width="40%">雲端運算環境下最佳協議與損毀診斷之探討</th>
+											<th>國科會</th>
+											<th>99/08/01~102/07/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th>NSC99-2632-E-324-001-MY3</th>
+											<th width="40%">提升私校研發能量專案計畫(整合型計畫)-以綠能無線感測網路為基礎之智慧型健康監測與照護系統研究---子計畫五「以雲端運算發展智慧健康照護服務模式」</th>
+											<th>國科會</th>
+											<th>99/08/01~102/07/31</th>
+											<th>子計畫五共同主持人</th>
+										</tr>
+										<tr class="success">
+											<th>NSC98-2218-E-277-001</th>
+											<th width="40%">在行動式隨意網路中使用特徵辨識之最佳競爭協議之探討</th>
+											<th>國科會</th>
+											<th>98/08/01~99/07/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th>TCCT-971A05</th>
+											<th width="40%">有效利用最少的訊息交換量在連通支配集合行動網路下的錯誤偵測協議之研究</th>
+											<th>慈濟技術學院</th>
+											<th>98/01/31~98/12/31</th>
+											<th>主持人</th>
+										</tr>
+									</tbody>
+								</table>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="tab-1 resp-tab-content">
+							<div class="tab_img">
+								<table class="table table-sm">
+									<thead>
+										<tr class="danger">
+											<th width="50%">產學名稱</th>
+											<th>合作廠商</th>
+											<th>期間</th>
+											<th>職位</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="info">
+											<th width="40%">工單追蹤與製令排單模擬驗證用數位雙生模組開發</th>
+											<th>工業技術研究院-智慧機械科技中心(智慧製造技術組)</th>
+											<th>111/05/01~111/11/30</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">宜蘭縣議會麥克風系統維護案</th>
+											<th>協義科技工業有限公司</th>
+											<th>111/05/01~111/06/30</th>
+											<th>協同主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">線上課程系統維護案</th>
+											<th>大道文創有限公司</th>
+											<th>111/04/01~111/09/30</th>
+											<th>協同主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">前端網頁設計及功能開發調整</th>
+											<th>工業技術研究院-智慧機械科技中心(智慧製造技術組)</th>
+											<th>110/08/01~110/11/30</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">RQ滅火器巡檢系統</th>
+											<th>佛教慈濟醫療財團法人</th>
+											<th>110/05/01~110/06/30</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">建立地端資訊支援系統</th>
+											<th>工業技術研究院-智慧機械科技中心(智慧製造技術組)</th>
+											<th>110/03/01~110/11/30</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">數據平台可視化功能新增及維護</th>
+											<th>工業技術研究院-智慧機械科技中心(智慧製造技術組)</th>
+											<th>110/03/01~110/12/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">多媒體數位教材製作計畫</th>
+											<th>創意未來科技股份有限公司</th>
+											<th>109/09/25~迄今</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">數據平台可視化建置</th>
+											<th>工業技術研究院</th>
+											<th>109/06/01~迄今</th>
+											<th>協同主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">血壓機APP新增需求及維護計畫</th>
+											<th>宣泓股份有限公司</th>
+											<th>109/06/01~迄今</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">數位教材製作計畫</th>
+											<th>創意未來科技股份有限公司</th>
+											<th>109/06/01~迄今</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">烘烤食品分類與識別定位檢驗深度學習機器視覺系統開發</th>
+											<th>寰宇宏科技股份有限公司</th>
+											<th>109/02/01~迄今</th>
+											<th>共同主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">血壓器APP建置計畫</th>
+											<th>宏人仁醫醫療器械設備有限公司</th>
+											<th>109/01/13~109/04/23</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">APP新增需求及維護計畫</th>
+											<th>奕傑電子股份有限公司</th>
+											<th>108/12/01~迄今</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">APP建置計畫</th>
+											<th>奕傑電子股份有限公司</th>
+											<th>108/05/01~108/12/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">擔任資訊顧問</th>
+											<th>香港壹壹有限公司</th>
+											<th>107/02/01~109/01/31</th>
+											<th>資訊顧問</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">Foodway APP建置計畫</th>
+											<th>雅太實業有限公司</th>
+											<th>108/02/20~108/05/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">格蘭英語課務教務影像辨識互動系統前導型開發</th>
+											<th>偉格圖書</th>
+											<th>108/02/01~108/12/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">鄉政營造展示網頁建置計畫</th>
+											<th>嘉義縣水上鄉公所</th>
+											<th>107/11/01~108/02/28</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">系統模組測試計畫</th>
+											<th>傑富資訊科技有限公司</th>
+											<th>107/10/01~108/02/28</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">Unity數位學習教材之建置計畫</th>
+											<th>力鯨科技有限公司</th>
+											<th>106/06/1~106/11/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">飯店管理系統之建置計畫</th>
+											<th>聚志科技有限公司</th>
+											<th>105/10/01~106/10/01</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">洋學苑網站平台維護計畫</th>
+											<th>洋學苑教育顧問有限公司</th>
+											<th>105/10/01~106/10/01</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">經費擴充模組之開發計畫</th>
+											<th>采威國際資訊股份有限公司</th>
+											<th>104/12~105/07/30</th>
+											<th>協同主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">美食網站建置與維運規劃</th>
+											<th>庫立馬媒體科技股份有限公司</th>
+											<th>104/08/01~105/08/31</th>
+											<th>協同主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">網銀國際進行人才培育計畫，並獲贈二台MoloSport室內腳踏車</th>
+											<th>網銀國際股份有限公司</th>
+											<th>104/02/01~迄今</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">洋學苑網站平台升級計畫</th>
+											<th>洋學苑教育顧問有限公司</th>
+											<th>104/02/01~ 105/01/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">大台灣電子商城建置計畫</th>
+											<th>大台灣旅遊網股份有限公司</th>
+											<th>103/11/01~104/05/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">iDesign專案第一期成果維護</th>
+											<th>庫立馬媒體科技股份有限公司</th>
+											<th>103/07/15~104/03/14</th>
+											<th>協同主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">大台灣旅遊進行產業實習</th>
+											<th>大台灣旅遊網股份有限公司</th>
+											<th>103/07/01~104/05/31</th>
+											<th>協同主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">洋學苑網站平台維護計畫</th>
+											<th>洋學苑教育顧問有限公司</th>
+											<th>102/05/12~104/01/12</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">教學平台安全分析建置計畫</th>
+											<th>碁峰資訊股份有限公司</th>
+											<th>102/08/01~103/07/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">洋學苑網站平台建置計畫</th>
+											<th>洋學苑教育顧問有限公司</th>
+											<th>102/07/05~102/10/05</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">教學平台安全分析建置計畫</th>
+											<th>勁園國際股份有限公司</th>
+											<th>101/08/01~102/07/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">擔任資訊顧問</th>
+											<th>維邦木業股份有限公司</th>
+											<th>101/07/01~108/07/31</th>
+											<th>資訊顧問</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">VeeTime光纖網路建設普查計畫</th>
+											<th>威達雲端電訊股份有限公司</th>
+											<th>101/03/23~101/04/10</th>
+											<th>協同主持人</th>
+										</tr>
+										<tr class="info">
+											<th width="40%">數位內容教學平台建置計畫</th>
+											<th>勁園國際股份有限公司</th>
+											<th>100/08/01~101/07/31</th>
+											<th>主持人</th>
+										</tr>
+										<tr class="success">
+											<th width="40%">數位影音製作計畫</th>
+											<th>台科大圖書股份有限公司</th>
+											<th>98/11/15~99/10/31</th>
+											<th>主持人</th>
+										</tr>
+									</tbody>
+								</table>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div id="students" class="students">
+		<div class="container">
+			<h3 class="title wow zoomInLeft animated" data-wow-delay=".5s">學生</h3>
+			<div class="sap_tabs">			
+				<div id="horizontalTab2" style="display: block; width: 100%; margin: 0px;">
+					<ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">
+						<li class="resp-tab-item"><span>作品預覽</span></li>
+						<li class="resp-tab-item"><span>學生</span></li>	
+					</ul>	
+					<div class="clearfix"> </div>	
+					<div class="resp-tabs-container">
+						<div class="tab-1 resp-tab-content">
+							<div class="col-md-12 about-left title"><h3 style=" color: #008B8B;"><b>專題</b></h3></div>
+							<div class="tab_img">
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/109學年度全自動智能農作平台.PNG" class="swipebox" title="">
+											<img src="images/109學年度全自動智能農作平台.PNG" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>109學年度全自動智能農作平台</h3>
+												<p></p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/109學年度多功能物聯網書包.PNG" class="swipebox" title="">
+											<img src="images/109學年度多功能物聯網書包.PNG" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>109學年度多功能物聯網書包</h3>
+												<p></p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/107學年度智能辨識回收集點系統.jpg" class="swipebox" title="">
+											<img src="images/107學年度智能辨識回收集點系統.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>107學年度智能辨識回收集點系統</h3>
+												<p></p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/107學年度Kinect健康促進之應用.jpg" class="swipebox" title="">
+											<img src="images/107學年度Kinect健康促進之應用.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>107學年度Kinect健康促進之應用</h3>
+												<p></p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/106學年度旅遊Easygo暨智慧型置物櫃系統.jpg" class="swipebox" title="">
+											<img src="images/106學年度旅遊Easygo暨智慧型置物櫃系統.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>106學年度旅遊Easy go暨智慧型置物櫃系統</h3>
+												<p></p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/106學年度智慧型子母清潔車.jpg" class="swipebox" title="">
+											<img src="images/106學年度智慧型子母清潔車.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>106學年度智慧型子母清潔車</h3>
+												<p></p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/105學年度物聯網結合unity提升健身腳踏車之互動娛樂效果.jpg" class="swipebox" title="">
+											<img src="images/105學年度物聯網結合unity提升健身腳踏車之互動娛樂效果.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>105學年度MoLoSport搭配Unity結合物聯網技術提升使用者健身運動之遊戲性</h3>
+												<p></p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/105學年度MoLoSport搭配Unity結合物聯網技術提升使用者健身運動之遊戲性.jpg" class="swipebox" title="">
+											<img src="images/105學年度MoLoSport搭配Unity結合物聯網技術提升使用者健身運動之遊戲性.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>105學年度MoLoSport搭配Unity結合物聯網技術提升使用者健身運動之遊戲性</h3>
+												<p></p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/104學年度室內腳踏車健康計畫雲端平台.png" class="swipebox" title="">
+											<img src="images/104學年度室內腳踏車健康計畫雲端平台.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>104學年度室內腳踏車健康計畫雲端平台</h3>
+												<p></p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/104學年度結合物聯網及Google Map之室內腳踏車旅遊行程之應用.jpg" class="swipebox" title="">
+											<img src="images/104學年度結合物聯網及Google Map之室內腳踏車旅遊行程之應用.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>104學年度結合物聯網及Google Map之室內腳踏車旅遊行程之應用</h3>
+												<p></p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/103學年度銀髮照護及監視系統.jpg" class="swipebox" title="台灣日趨嚴重的高齡化社會，在銀髮族越來越被重視的情況下，我們設計一個資訊整合系統，與專業的護理師及朝陽科技大學銀髮管理系老師討論而做全面性的表格策劃，使長者能在資訊科技的庇護下有個更安全且溫暖的環境，而照護者也能更有效率及有系統的掌握長者的身體狀況，以便提供長者最貼切的照顧與需求。">
+											<img src="images/103學年度銀髮照護及監視系統.jpg"  alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>103學年度銀髮照護及監視系統</h3>
+												<p>台灣日趨嚴重的高齡化社會，在銀髮族越來越被重視的情況下，我們設計一個資訊整合系統，與專業的護理師及朝陽科技大學銀髮管理系老師討論而做全面性的表格策劃，使長者能在資訊科技的庇護下有個更安全且溫暖的環境，而照護者也能更有效率及有系統的掌握長者的身體狀況，以便提供長者最貼切的照顧與需求。</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/103學年度雲端爬蟲及資料比對系統-以專利局為例.png" class="swipebox" title="隨著網路世界的蓬勃發展及資料量的爆增，使得網路上的資訊內容包羅萬象，對於想要取得精確資訊的人們來說是一項很大的挑戰。因此，可針對海量資料來進行資料搜尋並蒐集任何有相關價值的參考資料，來降低人為搜尋及比對的不足。">
+											<img src="images/103學年度雲端爬蟲及資料比對系統-以專利局為例.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>103學年度雲端爬蟲及資料比對系統-以專利局為例</h3>
+												<p>隨著網路世界的蓬勃發展及資料量的爆增，使得網路上的資訊內容包羅萬象，對於想要取得精確資訊的人們來說是一項很大的挑戰。因此，可針對海量資料來進行資料搜尋並蒐集任何有相關價值的參考資料，來降低人為搜尋及比對的不足。</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/102學年度雲端行動祕書.jpg" class="swipebox" title="現今這海量資料的時代，透過個人裝置完成人們所需要的需求儼然已成為趨勢。然而，眾多的網路服務需求，會使得提供服務的伺服器負擔過重。所以我們結合Hadoop技術來提高運算效能及容錯的能力，進而改善單一伺服器端負載過重的問題。因此，本專題將使用雲端運算平台，Hadoop，利用雲端的特性-軟體即服務，提供使用者一個免下載的作業環境。並且結合了再生龍這套還原系統，讓使用者可以隨時備份個人的電腦。為了加強平台的安全，採用了封包監測引擎來過濾我們的封包，確實的保護使用者的資料。">
+											<img src="images/102學年度雲端行動祕書.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>102學年度雲端行動祕書</h3>
+												<p>現今這海量資料的時代，透過個人裝置完成人們所需要的需求儼然已成為趨勢。然而，眾多的網路服務需求，會使得提供服務的伺服器負擔過重。所以我們結合Hadoop技術來提高運算效能及容錯的能力，進而改善單一伺服器端負載過重的問題。因此，本專題將使用雲端運算平台，Hadoop，利用雲端的特性-軟體即服務，提供使用者一個免下載的作業環境。並且結合了再生龍這套還原系統，讓使用者可以隨時備份個人的電腦。為了加強平台的安全，採用了封包監測引擎來過濾我們的封包，確實的保護使用者的資料。</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/102學年度展場導覽路線暨逃生統.jpg" class="swipebox" title="近年來，參觀展覽成為許多的民眾的休閒活動之一，但是受歡迎的展覽中，眾多的人潮降低了參觀品質及造成安全上有所顧慮，因此，我們開發一套導覽系統，結合了物聯網及雲端運算的概念，以提供不同的導覽模式，使參觀者依照自己的喜好或需求選擇適合的模式，提供正確且快速的路線，並透過即時感測資訊以確保參展品質及參展者安全。">
+											<img src="images/102學年度展場導覽路線暨逃生統.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>102學年度展場導覽路線暨逃生統</h3>
+												<p>近年來，參觀展覽成為許多的民眾的休閒活動之一，但是受歡迎的展覽中，眾多的人潮降低了參觀品質及造成安全上有所顧慮，因此，我們開發一套導覽系統，結合了物聯網及雲端運算的概念，以提供不同的導覽模式，使參觀者依照自己的喜好或需求選擇適合的模式，提供正確且快速的路線，並透過即時感測資訊以確保參展品質及參展者安全。</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/101學年度消防監測雲端平台.jpg" class="swipebox" title="雲端應用是現今最熱門的項目，由於網路與科技的發展，現今資料量的遠比從前多，同時人們對IT服務的需求不斷增加，這些改變了人們處理資料的方式以及他們所需的服務。因此，雲端的服務也更加的多元化。通過把資料存在雲端，用戶可以基於雲端服務“任何時候”從“任何地方”取得。同時，雲端計算具有高容量、高效率、高容錯性等特性。因此，用戶可以存進大量資料到雲端，並通過Google所提出的MapReduce來找尋所需要的資料。">
+											<img src="images/101學年度消防監測雲端平台.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>101學年度Hadoop雲端整合手機服務建置平台-消防監測雲端平台</h3>
+												<p>雲端應用是現今最熱門的項目，由於網路與科技的發展，現今資料量的遠比從前多，同時人們對IT服務的需求不斷增加，這些改變了人們處理資料的方式以及他們所需的服務。因此，雲端的服務也更加的多元化。通過把資料存在雲端，用戶可以基於雲端服務“任何時候”從“任何地方”取得。同時，雲端計算具有高容量、高效率、高容錯性等特性。因此，用戶可以存進大量資料到雲端，並通過Google所提出的MapReduce來找尋所需要的資料。</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/101學年度雲端市集.jpg" class="swipebox" title="雲端運算(Cloud Computing)是近年來最熱門的話題之一。每個人可以使用任何的設備來取得網路上的服務。而這種具動態可擴展性、高效率和容錯特點的新型態分散式計算環境，包含了龐大的服務節點、記憶量，高速網路和各種應用程式的服務。在本專題中，我們使用了雲端運算軟體”hadoop”來建置了一個雲端市集來提供校園軟體即服務。使用者可以上傳和訂閱我們在雲端市集上的服務。此外，我們也提供管理者和使用者個人介面來可以協助使用者方便且可靠地管理雲端系統。">
+											<img src="images/101學年度雲端市集.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>101學年度Hadoop雲端市集服務建置平台</h3>
+												<p>雲端運算(Cloud Computing)是近年來最熱門的話題之一。每個人可以使用任何的設備來取得網路上的服務。而這種具動態可擴展性、高效率和容錯特點的新型態分散式計算環境，包含了龐大的服務節點、記憶量，高速網路和各種應用程式的服務。在本專題中，我們使用了雲端運算軟體”hadoop”來建置了一個雲端市集來提供校園軟體即服務。使用者可以上傳和訂閱我們在雲端市集上的服務。此外，我們也提供管理者和使用者個人介面來可以協助使用者方便且可靠地管理雲端系統。</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/101學年度雲端美食特搜隊.jpg" class="swipebox" title="近年來，智慧型手機已成為風行和有吸引力的議題。每個使用者可以隨時透過智慧型手機來獲得線上服務。然而，眾多的網路服務需求，會使得提供服務的伺服器負擔過重。因此，本專題將透過一種包括大量的服務節點與儲存能力及高速網路型態的新型分散式計算環境，雲端運算，來提供行動用戶大量的網路服務。因此，本專題將使用雲端運算平台，Hadoop，整合Android智慧型手機來提供軟體即服務，如餐廳搜尋服務。此外，每個使用者將可利用我們所提供的雲端系統平台獲得高速的運算速度、大量的儲存空間、高容錯及高擴充性等特色。">
+											<img src="images/101學年度雲端美食特搜隊.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>101學年度Hadoop雲端服務整合平台-雲端美食特搜隊</h3>
+												<p>近年來，智慧型手機已成為風行和有吸引力的議題。每個使用者可以隨時透過智慧型手機來獲得線上服務。然而，眾多的網路服務需求，會使得提供服務的伺服器負擔過重。因此，本專題將透過一種包括大量的服務節點與儲存能力及高速網路型態的新型分散式計算環境，雲端運算，來提供行動用戶大量的網路服務。因此，本專題將使用雲端運算平台，Hadoop，整合Android智慧型手機來提供軟體即服務，如餐廳搜尋服務。此外，每個使用者將可利用我們所提供的雲端系統平台獲得高速的運算速度、大量的儲存空間、高容錯及高擴充性等特色。</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/100學年度校園雲端提供平台服務.png" class="swipebox" title="雲端運算(Could Computing)為分散式運算(Distributed Computing)的延伸概念。不但可以將龐大的運算作業分配給多台伺服器同時運算外，也俱備大量儲存空間、高容錯、高擴充性及節省能源耗費等特性。因此，本文以目前最風行的雲端開發軟體Hadoop來架設校園雲端提供平台即服務Campus Platform as a Service (CPaaS)的環境，進而打造程式開發與作業系統平台，讓開發人員可以透過本平台撰寫應用程式及服務；此外，一般學校使用者也可以透過本使用者介面來租賃個人空間及取得應用服務。">
+											<img src="images/100學年度校園雲端提供平台服務.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>100學年度雲端應用於校園運算服務建置平台</h3>
+												<p>雲端運算(Could Computing)為分散式運算(Distributed Computing)的延伸概念。不但可以將龐大的運算作業分配給多台伺服器同時運算外，也俱備大量儲存空間、高容錯、高擴充性及節省能源耗費等特性。因此，本文以目前最風行的雲端開發軟體Hadoop來架設校園雲端提供平台即服務Campus Platform as a Service (CPaaS)的環境，進而打造程式開發與作業系統平台，讓開發人員可以透過本平台撰寫應用程式及服務；此外，一般學校使用者也可以透過本使用者介面來租賃個人空間及取得應用服務。</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/100學年度雲端運算服務應用於教室借用系統.jpg" class="swipebox" title="雲本研究將透過雲端系統Hadoop來架設校園雲端教室借用系統，以提供大量使用者軟體即服務(Software as a Service, SaaS)的功能。而透過本平台，將可方便使用者查詢教室借用狀態及線上借用教室，藉此提供無紙化的雲端即服務教室借用管道。未來可以藉由SaaS來提供更多雲端服務以滿足校園使用者的眾多需求，並充份利用雲端資源來提高校園服務的整體運算能力。">
+											<img src="images/100學年度雲端運算服務應用於教室借用系統.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>100學年度雲端應用於校園資料中心建置平台</h3>
+												<p>本研究將透過雲端系統Hadoop來架設校園雲端教室借用系統，以提供大量使用者軟體即服務(Software as a Service, SaaS)的功能。而透過本平台，將可方便使用者查詢教室借用狀態及線上借用教室，藉此提供無紙化的雲端即服務教室借用管道。未來可以藉由SaaS來提供更多雲端服務以滿足校園使用者的眾多需求，並充份利用雲端資源來提高校園服務的整體運算能力。</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="tab-1 resp-tab-content">
+							<div class="col-md-12 about-left title"><h3 style=" color: #008B8B;"><b>專題</b></h3></div>
+							<div class="tab_img">
+							<br><br>
+								<table class="table table-sm">
+									<thead>
+										<tr class="danger">
+											<th style="width:10%">學年度</th>
+											<th width="40%">專題名稱</th>
+											<th>期間</th>
+											<th>學生</th>
+											<th style="width:5%">ppt</th>
+											<th style="width:5%">影片</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="success">
+											<th>109學年度</th>
+											<th width="40%">全自動智能農作平台</th>
+											<th>109/08~111/12</th>
+											<th>施雋彥、陳瑋江、蔡潮慶、蔡明德</th>
+											<th></th>
+											<th><a href="https://www.youtube.com/watch?v=XEZyDW3YQOc" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="info">
+											<th>109學年度</th>
+											<th width="40%">多功能物聯網書包</th>
+											<th>109/08~111/12</th>
+											<th>林致祥、陳姵汝、張漢福</th>
+											<th></th>
+											<th><a href="https://www.youtube.com/watch?v=eirTjM4S6J4" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="success">
+											<th>107學年度</th>
+											<th width="40%">智能辨識回收集點系統</th>
+											<th>105/08~108/01</th>
+											<th>彭浚翔、游政憲、林敬穎、陳宏瑋、柯玟成</th>
+											<th><a href="file/107學年度智能辨識回收集點系統.pptx"><button type="button" class="btn btn-primary btn-xs">下載</button></a></th>
+											<th><a href="https://www.youtube.com/watch?v=OYQmx7fPGic" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="info">
+											<th>107學年度</th>
+											<th width="40%">Kinect健康促進之應用</th>
+											<th>105/08~108/01</th>
+											<th>林昱融、林庭佑、林一忻、金浩申</th>
+											<th><a href="file/107學年度Kinect健康促進之應用.pptx"><button type="button" class="btn btn-primary btn-xs">下載</button></a></th>
+											<th><a href="https://www.youtube.com/watch?v=cWNwopHZGPE" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="success">
+											<th>106學年度</th>
+											<th width="40%">旅遊Easy go暨智慧型置物櫃系統</th>
+											<th>104/08~106/01</th>
+											<th>寇錫銨、徐瑞君、湯惟任、劉景承、劉侃姉</th>
+											<th></th>
+											<th><a href="https://www.youtube.com/watch?v=y_cmv7cKVlA" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="info">
+											<th>106學年度</th>
+											<th width="40%">智慧型子母清潔車</th>
+											<th>104/08~106/01</th>
+											<th>黃鉑衽、賴品誠、林培誌、曾柏豪、林銳</th>
+											<th></th>
+											<th><a href="https://www.youtube.com/watch?v=qNPd9HBY2IQ" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="success">
+											<th>105學年度</th>
+											<th width="40%">物聯網結合unity提升健身腳踏車之互動娛樂效果</th>
+											<th>103/08~105/01</th>
+											<th>張瑞升、陳書堯、陳冠伯、陳柏翔、陳宏瑋</th>
+											<th><a href="file/105學年度物聯網結合unity提升健身腳踏車之互動娛樂效果.pptx"><button type="button" class="btn btn-primary btn-xs">下載</button></a></th>
+											<th><a href="https://www.youtube.com/watch?v=UqD95ZSisxg" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="info">
+											<th>105學年度</th>
+											<th width="40%">MoLoSport搭配Unity結合物聯網技術提升使用者健身運動之遊戲性</th>
+											<th>103/08~105/01</th>
+											<th>彭兆平、彭唯致、黃亭瑜、陳廷勳</th>
+											<th><a href="file/105學年度MoLoSport搭配Unity結合物聯網技術提升使用者健身運動之遊戲性.pptx"><button type="button" class="btn btn-primary btn-xs">下載</button></a></th>
+											<th><a href="https://www.youtube.com/watch?v=A9e4nz00hDY" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="success">
+											<th>104學年度</th>
+											<th width="40%">室內腳踏車健康計畫雲端平台</th>
+											<th>102/08~104/01</th>
+											<th>賴立軒、吳建偉、簡志庭、盧冠宇、彭智傑</th>
+											<th></th>
+											<th><a href="https://www.youtube.com/watch?v=a3Y_AAMBSjg" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="info">
+											<th>104學年度</th>
+											<th width="40%">結合物聯網及Google Map之室內腳踏車旅遊行程之應用</th>
+											<th>102/08~104/01</th>
+											<th>林育安、林大為、洪偉淇、凃浩軒、朱世豪、史可華</th>
+											<th><a href="file/104學年度結合物聯網及Google Map之室內腳踏車旅遊行程之應用.pptx"><button type="button" class="btn btn-primary btn-xs">下載</button></a></th>
+											<th><a href="https://www.youtube.com/watch?v=WeQnwvj0iqs" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="success">
+											<th>103學年度</th>
+											<th>雲端爬蟲及資料比對系統-以專利局為例</th>
+											<th>101/08~103/01</th>
+											<th>吳彥青、林文耀、林穎廷、周詩函、王君瑋</th>
+											<th><a href="file/103學年度雲端分散式爬蟲之索引.pptx"><button type="button" class="btn btn-primary btn-xs">下載</button></a></th>
+											<th><a href="https://www.youtube.com/watch?v=WmDl1U0T84c" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="info">
+											<th>103學年度</th>
+											<th width="40%">銀髮照護及監視系統</th>
+											<th>101/08~103/01</th>
+											<th>李仁傑、呂竟鴻、林信志、黃奕傑、賴建良</th>
+											<th><a href="file/103學年度銀髮照護及監視系統.pptx"><button type="button" class="btn btn-primary btn-xs">下載</button></a></th>
+											<th><a href="https://youtu.be/Ce24iO2rZEk" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="success">
+											<th>102學年度</th>
+											<th width="40%">雲端行動祕書</th>
+											<th>100/08~102/01</th>
+											<th>劉宏軒、黃俊傑、曾駿宏、楊書泓、楊博皓</th>
+											<th><a href="file/102學年度雲端行動祕書.ppt"><button type="button" class="btn btn-primary btn-xs">下載</button></a></th>
+											<th><a href="https://youtu.be/dLYVhrz3uYI" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="info">
+											<th>102學年度</th>
+											<th width="40%">展場導覽路線暨逃生系統</th>
+											<th>100/08~102/01</th>
+											<th>洪梓奇、林昭宏、陳中岳、涂凱翔、張智凱</th>
+											<th><a href="file/102學年度展場導覽路線暨逃生統.ppt"><button type="button" class="btn btn-primary btn-xs">下載</button></a></th>
+											<th><a href="https://youtu.be/twgmJpMAtVw" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="success">
+											<th>101學年度</th>
+											<th width="40%">Hadoop雲端整合手機服務建置平台-消防監測雲端平台</th>
+											<th>99/08~101/01</th>
+											<th>劉駿成、沈聿容、黃琮勝、盧皓威</th>
+											<th></th>
+											<th><a href="https://youtu.be/2phtmwfiIPE" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="info">
+											<th>101學年度</th>
+											<th width="40%">Hadoop雲端市集服務建置平台</th>
+											<th>99/08~101/01</th>
+											<th>林仕軒、陳思綸、王永祥、陳昱凱</th>
+											<th><a href="file/101學年度雲端市集.ppt"><button type="button" class="btn btn-primary btn-xs">下載</button></a></th>
+											<th><a href="https://youtu.be/E1LKh8BWYsc" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="success">
+											<th>101學年度</th>
+											<th width="40%">Hadoop雲端服務整合平台-雲端美食特搜隊</th>
+											<th>99/08~99/01</th>
+											<th>吳致瑋、詹榮哲、蔡明田、楊士毅</th>
+											<th><a href="file/101學年度雲端美食特搜隊.pptx"><button type="button" class="btn btn-primary btn-xs">下載</button></a></th>
+											<th><a href="https://youtu.be/b_z41qX290k" target="new"><button type="button" class="btn btn-primary btn-xs">觀看</button></a></th>
+										</tr>
+										<tr class="info">
+											<th>100學年度</th>
+											<th width="40%">雲端應用於校園運算服務建置平台</th>
+											<th>98/08~100/01</th>
+											<th>張立傑、陳堃維、段宇豪</th>
+											<th><a href="file/100學年度校園雲端提供平台服務.ppt"><button type="button" class="btn btn-primary btn-xs">下載</button></a></th>
+											<th></th>
+										</tr>
+										<tr class="success">
+											<th>100學年度</th>
+											<th width="40%">雲端應用於校園資料中心建置平台</th>
+											<th>98/08~100/01</th>
+											<th>張振榮、賴資翔、羅際安</th>
+											<th></th>
+											<th></th>
+										</tr>
+										<tr class="info">
+											<th>99學年度</th>
+											<th width="40%">資通系資訊整合平台服務</th>
+											<th>97/08~99/01</th>
+											<th>周恩華、許譽馨、楊志偉</th>
+											<th></th>
+											<th></th>
+										</tr>
+										<tr class="success">
+											<th>99學年度</th>
+											<th width="40%">SIP網路電話應用於校園WiFi</th>
+											<th>97/08~99/01</th>
+											<th>張芳誠、錢南君</th>
+											<th></th>
+											<th></th>
+										</tr>
+									</tbody>
+								</table>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="col-md-12 about-left title"><h3 style=" color: #008B8B;"><b>研究生</b></h3></div>
+							<div class="tab_img">
+							<br><br>
+								<table class="table table-sm">
+									<thead>
+										<tr class="danger">
+											<th style="width:10%">學年度</th>
+											<th width="10%">照片</th>
+											<th>姓名</th>
+											<th width="50%">論文名稱</th>
+											<th>畢業年度</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="info">
+											<th>109學年度</th>
+											<th><img src="images/p24.jpg" width="100"></th>
+											<th>黃志銘</th>
+											<th>使用新型神經網路模型 Bi-ATLSTM的比特幣價格預測<br>
+											Bitcoin Price Prediction Using Novel Neural Network Model Bi-ATLSTM
+											</th>
+											<th></th>
+										</tr>
+										<tr class="success">
+											<th>108學年度</th>
+											<th><img src="images/p22.jpg" width="100"></th>
+											<th>劉益菖</th>
+											<th><center>基於時間分類的公車旅行時間預測模型：以台中市為例<br>
+											Time Classification-based Prediction Model for Bus Travel Time: Case Study for Taichung City
+											</th>
+											<th></th>
+										</tr>
+										<tr class="info">
+											<th>108學年度</th>
+											<th><img src="images/p21.jpg" width="100"></th>
+											<th>林敬穎</th>
+											<th><center>基於區塊鏈及智能合約技術的可追溯線上遺囑系統<br>
+											On the Basis of Blockchain Technology to Design a Traceable Online Will System
+											</th>
+											<th></th>
+										</tr>
+										<tr class="success">
+											<th>108學年度</th>
+											<th><img src="images/p20.jpg" width="100"></th>
+											<th>林庭佑</th>
+											<th><center>運用資料探勘建立於社交網路的意見領袖識別模型<br>
+											An Opinion Leadership Identification Model Built on Social Networks Using Data Mining
+											</th>
+											<th></th>
+										</tr>
+										<tr class="info">
+											<th>108學年度</th>
+											<th><img src="images/p19.jpg" width="100"></th>
+											<th>陳宏瑋</th>
+											<th><center>在無線傳感器和Actor網路中的權重恢復演算法<br>
+											Weight Recovery Algorithm in Wireless Sensor and Actor Networks
+											</th>
+											<th></th>
+										</tr>
+										<tr class="success">
+											<th>108學年度</th>
+											<th><img src="images/p18.jpg" width="100"></th>
+											<th>林一忻</th>
+											<th><center>車載自組織網路中以提名機制法為基礎之集群頭選擇演算法研究<br>
+											The Study of the Cluster Head Selection Algorithm based on the Nominating Mechanism in VANET Environment
+											</th>
+											<th></th>
+										</tr>
+										<tr class="info">
+											<th>107學年度</th>
+											<th><img src="images/p17.jpg" width="100"></th>
+											<th>黃鉑祍</th>
+											<th><center>在隨意式網路中提出一個改良式之指派連通支配集演算法<br>
+											An Improved Power-Aware Nominate Connected Dominating Set Algorithm in Ad-Hoc Networks</th>
+											<th>109學年度</th>
+										</tr>
+										<tr class="success">
+											<th>107學年度</th>
+											<th><img src="images/p16.jpg" width="100"></th>
+											<th>曾柏豪</th>
+											<th><center>通過在雲計算網絡中使用多閾值來提高效率的新Sufferage算法<br>
+											The New Sufferage Algorithm to Enhance Efficiency by Using Multi-threshold in a Cloud Computing Network</th>
+											<th>109學年度</th>
+										</tr>
+										<tr class="info">
+											<th>107學年度</th>
+											<th><img src="images/p15.jpg" width="100"></th>
+											<th>林培誌</th>
+											<th><center>透過MQTT通信協議於物聯網環境中進行低成本之群組加密及身份驗證<br>
+											Low-Cost Group Encryption and Identity Verification Through MQTT Communication Protocol in IoT Environment</th>
+											<th>109學年度</th>
+										</tr>
+										<tr class="success">
+											<th>107學年度</th>
+											<th><img src="images/p14.jpg" width="100"></th>
+											<th>劉景承</th>
+											<th><center>於移動邊緣計算中具有相互認證的輕量級安全方案<br>
+											A Lightweight Security Scheme with Mutual Authentication in Mobile Edge Computing</th>
+											<th>109學年度</th>
+										</tr>
+										<tr class="info">
+											<th>107學年度</th>
+											<th><img src="images/p13.jpg" width="100"></th>
+											<th>寇錫銨</th>
+											<th><center>於農業物聯網中的輕量級安全協議探討<br>
+											A study of lightweight security protocol for agricultural IoT environment</th>
+											<th>109學年度</th>
+										</tr>
+										<tr class="success">
+											<th>106學年度</th>
+											<th><img src="images/p12.jpg" width="100"></th>
+											<th>陳澤宇</th>
+											<th><center>移動隨意式網路中透過推派演算法建構最小化的連通支配集之分散式演算法<br>
+											Decentralized Algorithm for Constructing Minimized Connected Dominating Sets by Nominate Algorithms in Mobile Ad-hoc Networks</th>
+											<th>108學年度</th>
+										</tr>
+										<tr class="info">
+											<th>106學年度</th>
+											<th><img src="images/p11.jpg" width="100"></th>
+											<th>陳宏瑋</th>
+											<th><center>透過熱門程度、阻塞機率與參考佇列在移動邊緣計算環境中建構自適應動態檔案複製機制<br>
+											</th>
+											<th>108學年度</th>
+										</tr>
+										<tr class="success">
+											<th>106學年度</th>
+											<th><img src="images/p10.jpg" width="100"></th>
+											<th>彭兆平</th>
+											<th><center>基於區塊鏈技術之分散式聯合銀行電子支付系統<br>
+											Decentralized Cooperative Bank Electronic Payment System Based on Blockchain Technology</th>
+											<th>108學年度</th>
+										</tr>
+										<tr class="info">
+											<th>105學年度</th>
+											<th><img src="images/p9.jpg" width="100"></th>
+											<th>林育安</th>
+											<th><center>於霧計算環境下提升車載網路的可靠度之研究<br>
+											A Study of Enhancing the Reliability of Vehicular Network in Fog Computing Environment</th>
+											<th>108學年度</th>
+										</tr>
+										<tr class="success">
+											<th>105學年度</th>
+											<th><img src="images/p8.jpg" width="100"></th>
+											<th>柯名璟</th>
+											<th><center>透過排程演算法在異質性雲端環境下增強任務調度效能之研究<br>
+											A Study of Scheduling Algorithm to Enhance the Performance of Task Dispatch under the Heterogeneous Cloud Environment</th>
+											<th>107學年度</th>
+										</tr>
+										<tr class="info">
+											<th>104學年度</th>
+											<th><img src="images/p2.jpg" width="100"></th>
+											<th>王君瑋</th>
+											<th><center>於軟體定義網路下以路徑為基礎之拜占庭協議新解法<br>
+											New Sight on Path-Based Byzantine Agreement Protocol under Software-Defined Network</th>
+											<th>106學年度</th>
+										</tr>
+										<tr class="success">
+											<th >104學年度</th>
+											<th><img src="images/p1.png" width="100"></th>
+											<th>林信志</th>
+											<th><center>隨意式網路下透過相對補集理論提出一個改良連通支配集演算法<br>
+											An Improved Connected Dominating Set Algorithm by Relative Complement Set Theory in Ad Hoc Network</th>
+											<th>106學年度</th>
+										</tr>
+										<tr class="info">
+											<th >104學年度</th>
+											<th><img src="images/p3.png" width="100"></th>
+											<th>吳彥青</th>
+											<th><center>利用適地性序列型樣建構行動商務推薦系統<br>
+											To Construct the Mobile Commerce Recommendation System by using Location-based Sequential Patterns</th>
+											<th>104學年度</th>
+										</tr>
+										<tr class="success">
+											<th >103學年度</th>
+											<th><img src="images/p6.png" width="100"></th>
+											<th>鄭子暘</th>
+											<th><center>多群組軟體定義網路下重新探討拜占庭協議問題<br>
+											Restudy the Byzantine Agreement Problem under Multi-Controller Overlay Groups Software-Defined Networks</th>
+											<th></th>
+										</tr>
+										<tr class="info">
+											<th >102學年度</th>
+											<th><img src="images/p5.png" width="100"></th>
+											<th>林仕軒</th>
+											<th><center>透過有效率之叢集Sufferage排程演算法來提升異質雲端環境之系統執行效能<br>
+											An Efficient Cluster Scheduling Algorithm based on Sufferage Heuristic to Improve the Performance of System in the Heterogeneous Cloud Computing Environment</th>
+											<th>104學年度</th>
+										</tr>
+										<tr class="success">
+											<th >101學年度</th>
+											<th><img src="images/p4.png" width="100"></th>
+											<th>張立傑</th>
+											<th><center>透過使用阻塞機率與參考佇列在雲端運算環境中 提出動態檔案複製機制來達成負載平衡<br>
+											A Dynamic Data Replication Mechanism Using Blocking Probability And Reference Queue for Achieving Load Balance in Cloud Computing Environment</th>
+											<th>102學年度</th>
+										</tr>
+										<tr class="info">
+											<th >97學年度</th>
+											<th><img src="images/p7.png" width="100"></th>
+											<th>陳彥儒</th>
+											<th><center>使用參考佇列之高效能任務排程演算法於雲端運算環境之探討<br>
+											Efficient Task Scheduling Algorithm with Reference Queues in a Cloud Computing Environment</th>
+											<th>99學年度</th>
+										</tr>
+									</tbody>
+								</table>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div id="course" class="course">
+		<div class="container">
+			<h3 class="title wow zoomInLeft animated">課程專區</h3>
+				<h4>如有課程問題，請與我聯絡<a href="https://mail.google.com/mail/?view=cm&fs=1&to=mlchiang@nutc.edu.tw">mlchiang@nutc.edu.tw</a></h5>
+				<table class="table table-sm">
+					<thead>
+						<tr class="danger">
+							<th style="width:20%">學年度</th>
+							<th width="40%">課程名稱</th>
+							<th width="20%">教材</th>
+							<th width="20%">其它</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="info">
+							<th rowspan="6" style="text-align: center;vertical-align: middle;">110學年度(上)</th>
+							<th>資料結構</th>
+							<th><a href="file/course/110(1)/DS/F7801D 投影片-20210724T074614Z-001.zip">F7801D 投影片-20210724T074614Z-001</a></th>
+							<th><a href="file/course/110(1)/DS/other/old_f7801b.zip">old_f7801b</a></th>
+						</tr>
+						<tr class="info">
+							<th>實務專題(一)</th>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr class="info">
+							<th>作業系統</th>
+							<th><a href="file/course/110(1)/OS/F7888B投影片-20210801T053250Z-001.zip">F7888B投影片-20210801T053250Z-001</a></th>
+							<th><a href="file/course/110(1)/OS/other/pipleline補充.doc">pipleline補充</a><br>
+								<a href="file/course/110(1)/OS/other/相(絕)對路徑.docx">相(絕)對路徑</a>
+							</th>
+						</tr>
+						<tr class="info">
+							<th>週會/班會(學年)</th>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr class="info">
+							<th>程式設計</th>
+							<th><a href="file/course/110(1)/AI-程式設計/FS712 投影片 PDF.zip">FS712 投影片 PDF</a></th>
+							<th><a href="file/course/110(1)/AI-程式設計/other/速學程式補充資料.pdf">速學程式補充資料</a>
+							</th>
+						</tr>
+						<tr class="info">
+							<th>服務與學習(一)</th>
+							<th><a href="file/course/110(1)/服學/服務學習介紹.pdf">服務學習介紹</a></th>
+							<th><a href="file/course/110(1)/服學/other/3-1 課程反思心得.pdf">3-1 課程反思心得</a><br>
+								<a href="file/course/110(1)/服學/other/3-4 課程問卷(後測).pdf">3-4 課程問卷(後測)</a><br>
+								<a href="file/course/110(1)/服學/other/3-6 4F反思心得.pdf">3-6 4F反思心得</a><br>
+								<a href="file/course/110(1)/服學/other/3-7 社區服務打掃反思單 New.odt">3-7 社區服務打掃反思單 New</a><br>
+								<a href="file/course/110(1)/服學/other/活動大表電子檔.pdf">活動大表電子檔</a><br>
+								<a href="file/course/110(1)/服學/other/校外服務點名單AI一1 .pdf">校外服務點名單AI一1 </a><br>
+						</tr>
+						<tr class="success">
+							<th rowspan="5" style="text-align: center;vertical-align: middle;">110學年度(下)</th>
+							<th>實務專題(二)</th>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr class="success">
+							<th>計算機網路實驗</th>
+							<th><a href="file/course/110(2)/11002計算機網路實驗/課程資料/LABch1-6.zip">LABch1-6</a></th>
+							<th><a href="file/course/110(2)/11002計算機網路實驗/other/Packet Tracer 網路設備介紹_files.zip">Packet Tracer 網路設備介紹_files</a><br>
+								<a href="file/course/110(2)/11002計算機網路實驗/other/何時用Straight.pptx">何時用Straight</a>
+							</th>
+						</tr>
+						<tr class="success">
+							<th>週會/班會(學年)</th>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr class="success">
+							<th>計算機網路工程</th>
+							<th><a href="file/course/110(2)/計算機網路工程/課程資訊/網路切割範例.pdf">網路切割範例</a></th>
+							<th><a href="file/course/110(2)/計算機網路工程/other/Lab5_6.zip">Lab5_6</a>
+							</th>
+						</tr>
+						<tr class="success">
+							<th>服務與學習(二)</th>
+							<th><a href="file/course/110(2)/服學/課程資料/基礎SL附件表格.zip">基礎SL附件表格</a></th>
+							<th><a href="file/course/110(2)/服學/other/AI一1校外點名單 .pdf">AI一1校外點名單 </a><br></th>
+						</tr>
+						<tr class="info">
+							<th rowspan="4" style="text-align: center;vertical-align: middle;">111學年度(上)</th>
+							<th>程式設計</th>
+							<th><a href="file/course/110(1)/AI-程式設計/FS712 投影片 PDF.zip">FS712 投影片 PDF</a></th>
+							<th><a href="file/course/110(1)/AI-程式設計/other/速學程式補充資料.pdf">速學程式補充資料</a></th>
+						</tr>
+						<tr class="info">
+							<th>計算機網路實驗</th>
+							<th><a href="file/course/110(2)/11002計算機網路實驗/課程資料/LABch1-6.zip">LABch1-6</a></th>
+							<th><a href="file/course/110(2)/11002計算機網路實驗/other/Packet Tracer 網路設備介紹_files.zip">Packet Tracer 網路設備介紹_files</a><br>
+								<a href="file/course/110(2)/11002計算機網路實驗/other/何時用Straight.pptx">何時用Straight</a>
+							</th>
+						</tr>
+						<tr class="info">
+							<th>週會/班會(學年)</th>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr class="info">
+							<th>服務與學習(一)</th>
+							<th><a href="file/course/111(1)/服學/課程資料/服務學習介紹.pdf">服務學習介紹</a></th>
+							<th><a href="file/course/111(1)/服學/other/基礎SL附件表格.zip">基礎SL附件表格</a><br>
+						</tr>
+					</tbody>
+				</table>
+		</div>
+	</div>
+	<div id="honor" class="honor">
+		<div class="container">
+			<h3 class="title wow zoomInLeft animated">榮譽</h3>
+				<table class="table table-sm">
+					<thead>
+						<tr class="danger">
+							<th style="width:5%">日期</th>
+							<th width="40%">名稱</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="info">
+							<th>110學年度</th>
+							<th>擔任朝陽科大系主任時間期於2021年2月1日通過六年IEET工程教育認證</th>
+						</tr>
+						<tr class="success">
+							<th>109學年度</th>
+							<th>指導學生施雋彥等4人以「全自動智能農作平台」獲109年度朝陽科大資訊學院M309展場第二名</th>
+						</tr>
+						<tr class="info">
+							<th>109學年度</th>
+							<th>指導學生林致祥等3人以「多功能物聯網書包」獲109年度朝陽科大資訊學院M312展場佳作</th>
+						</tr>
+						<tr class="success">
+							<th>109學年度</th>
+							<th>指導學生林致祥等3人以「多功能物聯網書包」獲109年度朝陽科大資通系專題競賽第三名</th>
+						</tr>
+						<tr class="info">
+							<th>109學年度</th>
+							<th>指導學生施雋彥等4人以「全自動智能農作平台」獲109年度朝陽科大資通系專題競賽第四名</th>
+						</tr>
+						<tr class="success">
+							<th>108學年度</th>
+							<th>獲108學年度推動產學合作與學術研究獎狀</th>
+						</tr>
+						<tr class="info">
+							<th>108/03/29</th>
+							<th>指導陳澤宇獲得2019AIT資訊學院英文論文比賽佳作</th>
+						</tr>
+						<tr class="success">
+							<th>108/05/21</th>
+							<th>指導寇錫銨(五年一貫生)獲得107學年度研究生成果競賽第三名</th>
+						</tr>
+						<tr class="info">
+							<th>108/05/21</th>
+							<th>指導劉景承(五年一貫生)獲得107學年度研究生成果競賽佳作</th>
+						</tr>
+						<tr class="success">
+							<th>107/12/27</th>
+							<th>獲贈指導學生參加朝陽科大「第11屆創意好點子發想競賽」感謝狀</th>
+						</tr>
+						<tr class="info">
+							<th>107/12/20</th>
+							<th>指導學生彭浚翔、游政憲、林敬穎、陳宏瑋及柯玟成以「智能辨識回收集點系統」獲107年度朝陽科大資訊學院學生專競賽M212展場佳作</th>
+						</tr>
+						<tr class="success">
+							<th>107/12/20</th>
+							<th>指導學生林昱融、林庭佑、林一忻及金浩申以「Kinect健康促進之應用」獲107年度朝陽科大資訊學院學生專競賽M312展場佳作</th>
+						</tr>
+						<tr class="info">
+							<th>107/12/11</th>
+							<th>指導學生彭浚翔、游政憲、林敬穎、陳宏瑋及柯玟成以「智能辨識回收集點系統」獲107年度朝陽科大資通系專題競賽第二名</th>
+						</tr>
+						<tr class="success">
+							<th>107/12/11</th>
+							<th>指導學生林昱融、林庭佑、林一忻及金浩申以「Kinect健康促進之應用」獲107年度朝陽科大資通系專題競賽第三名</th>
+						</tr>
+						<tr class="info">
+							<th>107/12/11</th>
+							<th>指導學生謝釧盛、蘇威及顏真偉(廈門理工專班)以「IoT模擬農場」獲107年度朝陽科大資通系專題競賽佳作</th>
+						</tr>
+						<tr class="success">
+							<th>106/12/12</th>
+							<th>指導專題學生寇錫銨、徐瑞君、湯惟任、劉景承及劉侃姉以「旅遊Easy go暨智慧型置物櫃系統」獲106年度朝陽科大資通系專題競賽佳作</th>
+						</tr>
+						<tr class="info">
+							<th>106/12/12</th>
+							<th>指導專題學生黃鉑衽、賴品誠、林培誌、曾柏豪及林銳以「智慧型子母清潔車」獲106年度朝陽科大資通系專題競賽佳作</th>
+						</tr>
+						<tr class="success">
+							<th>106學年度</th>
+							<th>獲106學年度推動產學合作與學術研究獎狀</th>
+						</tr>
+						<tr class="info">
+							<th>106學度</th>
+							<th>擔任106學度第2學期朝陽科大「接待家庭」老師</th>
+						</tr>
+						<tr class="success">
+							<th>107/06/06</th>
+							<th>擔任「106學年度第2學期勞勞作教育日環境比賽」之評分委員</th>
+						</tr>
+						<tr class="info">
+							<th>106/11/17</th>
+							<th>指導學生參加2017全國大專院校Healthy x Happy創新提案構想書競賽表現優異，榮獲佳作</th>
+						</tr>
+						<tr class="success">
+							<th>106/06/03</th>
+							<th>指導研究生鄭子暘獲得2017IET Taipei Local Network英文簡報競賽佳作</th>
+						</tr>
+						<tr class="info">
+							<th>106/04/21</th>
+							<th>指導研究生鄭子暘獲得2017AIT英文簡報競賽優勝</th>
+						</tr>
+						<tr class="success">
+							<th>106學度</th>
+							<th>擔任106學度第1學期朝陽科大「接待家庭」老師</th>
+						</tr>
+						<tr class="info">
+							<th></th>
+							<th>獲Computer Standard & Interfaces「Outstanding Contribution in Reviewing」獎狀</th>
+						</tr>
+						<tr class="success">
+							<th>105學年度</th>
+							<th>獲105學年度推動產學合作與學術研究獎狀</th>
+						</tr>
+						<tr class="info">
+							<th>105學年度</th>
+							<th>獲105學年度教師指導學生參賽獲獎獎狀</th>
+						</tr>
+						<tr class="success">
+							<th>104/12/21</th>
+							<th>指導學生參與網銀國際「moLo Sport互動式應用軟體技術之產學合作計畫」，獲感謝狀一紙</th>
+						</tr>
+						<tr class="info">
+							<th>105學年度</th>
+							<th>獲105學年度朝陽科大教學優良教師</th>
+						</tr>
+						<tr class="success">
+							<th>105學年度</th>
+							<th>擔任105學度第2學期朝陽科大「接待家庭」老師</th>
+						</tr>
+						<tr class="info">
+							<th>10/05</th>
+							<th>指導Unity專題遊戲設計獲2016全國大專校院軟體創作競賽「值得注目獎」</th>
+						</tr>
+						<tr class="success">
+							<th>104學年度</th>
+							<th>指導志工團隊「朝young資訊志工隊」獲104學年度教育部訊志工團隊數位關懷大賽，在地生活數位關懷類別「優選」</th>
+						</tr>
+						<tr class="info">
+							<th>105/05</th>
+							<th>指導專題學生彭兆平、陳廷勳、黃亭瑜、彭唯致以「You Cant Catch Me」，參加「2016全國大專校院軟體創作競賽-雲端網際服務與其他應用」獲得值得注目獎</th>
+						</tr>
+						<tr class="success">
+							<th>104/11/27</th>
+							<th>指導洪佳吟、邱怡瑄、賴郁樺、陳昭如、郭佳馨、劉依庭及賴其慧以「老吾老銀色騎機」作品榮獲「2015行動終端創新應用APP競賽」特優獎(第一名)及創新獎</th>
+						</tr>
+						<tr class="info">
+							<th>103/12</th>
+							<th>指導專題學生吳彥青、林文耀、林穎廷、周詩函及王君瑋以「雲端爬蟲及資料比對系統-以專利局為例」，獲得資通系103學年度實務專題成果競賽佳作</th>
+						</tr>
+						<tr class="success">
+							<th>103/12</th>
+							<th>指導專題學生李仁傑、呂竟鴻、林信志、黃奕傑及賴建良以「銀髮照護及監視系統」，獲得資通系103學年度實務專題成果競賽佳作</th>
+						</tr>
+						<tr class="info">
+							<th>103/06/06</th>
+							<th>擔任第九屆智慧生活科技研討會Session Chair及論文審稿委員</th>
+						</tr>
+						<tr class="success">
+							<th>103/05</th>
+							<th>協助宜寧中學舉辦102學年度「資通訊科技證照研習營」，特頒感謝狀</th>
+						</tr>
+						<tr class="info">
+							<th>103/5</th>
+							<th>指導學生張立傑獲得資通系102學年度研究生成果競賽第二名</th>
+						</tr>
+						<tr class="success">
+							<th>103/04/29</th>
+							<th>獲得LPIC-1 Certification</th>
+						</tr>
+						<tr class="info">
+							<th>103/01/22</th>
+							<th>獲得企業電子化助理規劃師合格證書</th>
+						</tr>
+						<tr class="success">
+							<th>103/01/22</th>
+							<th>獲得雲端服務規劃師合格證書</th>
+						</tr>
+						<tr class="info">
+							<th>102學年度</th>
+							<th>獲得102年服務學習示範性計畫全國大專校院組-佳作獎</th>
+						</tr>
+						<tr class="success">
+							<th>102學年度</th>
+							<th>102學度度擔任朝陽科大「接待家庭」老師</th>
+						</tr>
+						<tr class="info">
+							<th>102/12/13</th>
+							<th>獲得台灣資訊整合協會感謝狀</th>
+						</tr>			
+						<tr class="success">
+							<th>102/12/13</th>
+							<th>以「雲端運算概論課程」獲得102年度獎助教師編製教材及學學參考資料優良獎</th>
+						</tr>
+						<tr class="info">
+							<th>102/12</th>
+							<th>導專題學生洪梓奇、涂凱翔、陳中岳、林昭宏及張智凱以「展場路線導覽暨逃生系統」，獲得資通系102學年度實務專題成果競賽第四名</th>
+						</tr>
+						<tr class="success">
+							<th>102/09</th>
+							<th>協助宜寧中學舉辦101學年度「資通訊科技證照研習營」，特頒感謝狀</th>
+						</tr>
+						<tr class="info">
+							<th>102/08</th>
+							<th>協助宜寧中學舉辦101學年度「資通訊科技證照研習營」，特頒感謝狀</th>
+						</tr>
+						<tr class="success">
+							<th>102/04</th>
+							<th>協助宜寧中學舉辦101學年度「資通訊科技證照研習營」，特頒感謝狀</th>
+						</tr>
+						<tr class="info">
+							<th>101學年度</th>
+							<th>指導學生吳致瑋、蔡明田、楊士毅及詹榮哲以「雲端美食特搜隊」、參加101年資訊學院學生專題競賽榮獲佳作</th>
+						</tr>
+						<tr class="success">
+							<th>101/12/19</th>
+							<th>指導學生林仕軒、陳昱凱、王永祥及陳思綸以「雲端市集」參加教育部顧問室資訊軟體人材培育先導計畫「101年度雲端計算與服務專題成果競賽」榮獲佳作</th>
+						</tr>
+						<tr class="info">
+							<th>101/12</th>
+							<th>指導專題學生吳致瑋、詹榮哲、蔡明田與楊士毅以「雲端美食特搜隊」，獲得資通系103學年度實務專題成果競賽佳作</th>
+						</tr>
+						<tr class="success">
+							<th>101/12</th>
+							<th>指導專題學生林仕軒、陳思綸、王永祥與陳昱凱以「雲端市集」，獲得資通系103學年度實務專題成果競賽佳作</th>
+						</tr>
+						<tr class="info">
+							<th>101/12</th>
+							<th>指導專題學生劉駿成、沈聿容、黃琮勝與盧皓威以「消防監測雲端平台」，獲得資通系103學年度實務專題成果競賽佳作</th>
+						</tr>
+						<tr class="success">
+							<th>101/07/09-迄今</th>
+							<th>擔任維邦木業股份有限公司資訊顧問一職</th>
+						</tr>
+						<tr class="info">
+							<th>101/06/25</th>
+							<th>獲得2011Certiport國際認證教學傑出成就獎</th>
+						</tr>
+						<tr class="success">
+							<th>101/06/25</th>
+							<th>獲得2011國際認證教學傑出成就獎</th>
+						</tr>
+						<tr class="info">
+							<th>101/06/20</th>
+							<th>受邀至彰化師大數位學習研究所演講「Hadoop於雲端運算之應用」</th>
+						</tr>
+						<tr class="success">
+							<th>101/05/16</th>
+							<th>獲得MTA Security Fundamentals證照</th>
+						</tr>
+						<tr class="info">
+							<th>101/05/16</th>
+							<th>獲得MTA Networking Fundamentals證照</th>
+						</tr>
+						<tr class="success">
+							<th>101/05/16</th>
+							<th>獲得MTA Database Administration Fundamentals證照</th>
+						</tr>
+						<tr class="info">
+							<th>101/05</th>
+							<th>擔任勁園國際股份有限公司舉辦「IC3證照研習營」輔導教師，特頒感謝狀</th>
+						</tr>
+						<tr class="success">
+							<th>101/04/16</th>
+							<th>擔任弘光科技大學資訊工程系課程諮詢委員</th>
+						</tr>
+						<tr class="info">
+							<th>101/01/16</th>
+							<th>獲得Cloud Management and Applications(ipma-asia)證照</th>
+						</tr>
+						<tr class="success">
+							<th>101/01/16</th>
+							<th>獲得Cloud Security Knowledge(ipma-asia)證照</th>
+						</tr>
+						<tr class="info">
+							<th>100學年度</th>
+							<th>獲得100學年度校級優良導師</th>
+						</tr>
+						<tr class="success">
+							<th>100學年度</th>
+							<th>100學度度擔任朝陽科大「接待家庭」老師</th>
+						</tr>
+						<tr class="info">
+							<th>100學年度</th>
+							<th>榮獲100年度「論文類佳作獎」</th>
+						</tr>
+						<tr class="success">
+							<th>100/11/24</th>
+							<th>受邀至亞洲大學 資訊學院 演講「淺談雲端運算」</th>
+						</tr>
+						<tr class="info">
+							<th>100/10/11</th>
+							<th>獲得Adobe Flash CS5證書</th>
+						</tr>
+						<tr class="success">
+							<th>100/10/01</th>
+							<th>擔任勁園國際股份有限公司舉辦「office 2010國際認證種子教師研習暨資訊用能力大賽」議程主持人，特頒感謝狀</th>
+						</tr>
+						<tr class="info">
+							<th>100/08/20</th>
+							<th>擔任勁園國際股份有限公司舉辦「IC3證照研習營」輔導教師，特頒感謝狀</th>
+						</tr>
+						<tr class="success">
+							<th>100/08/20</th>
+							<th>協助宜寧中學舉辦「資通訊科技證照研習營」，特頒感謝狀</th>
+						</tr>
+						<tr class="info">
+							<th>100/08/15</th>
+							<th>協助中興大學「計算機概論課程」教學暨影音教材錄製，特頒感謝狀</th>
+						</tr>
+						<tr class="success">
+							<th>100/07/04-06</th>
+							<th>指導學生Szu-Hao Tsai 獲得BAI conference best paper award</th>
+						</tr>
+						<tr class="info">
+							<th>100/07/04</th>
+							<th>指導碩士蔡思豪參加BAI2011 International Conference on Business and Information獲得Best Paper Award</th>
+						</tr>
+						<tr class="success">
+							<th>100/05</th>
+							<th>指導99學年度研究生陳彥儒參加資通系成果競賽獲得佳作</th>
+						</tr>
+						<tr class="info">
+							<th>100/01/22</th>
+							<th>獲得Internet and Computing Core Certification(IC3)-Outstanding Teacher Award 2010獎項</th>
+						</tr>
+						<tr class="success">
+							<th>99學度</th>
+							<th>99學度擔任朝陽科技大學「接待家庭」老師</th>
+						</tr>
+						<tr class="info">
+							<th>99學度</th>
+							<th>99學年度推動產學合作與學術研究獎</th>
+						</tr>
+						<tr class="success">
+							<th>99/12</th>
+							<th>99學年度指導張芳誠與錢南君專題生參加資訊與通訊系專題競賽獲得佳作</th>
+						</tr>					
+						<tr class="info">
+							<th>99/04/19</th>
+							<th>獲頒Microsoft Office Specialist-Official Certification證書</th>
+						</tr>
+						<tr class="success">
+							<th>99/04/19</th>
+							<th>獲頒Microsoft Office Specialist (MOS)授權認證中心監評委員證書</th>
+						</tr>
+						<tr class="info">
+							<th>99/04/16</th>
+							<th>獲頒經濟部Network Communication IT Expert證書</th>
+						</tr>
+						<tr class="success">
+							<th>99/01/06</th>
+							<th>獲頒Internet and computing core certification -Authorized Proctor監評證書</th>
+						</tr>
+						<tr class="info">
+							<th>99/04/16</th>
+							<th>獲頒經濟部Network Communication IT Expert證書</th>
+						</tr>
+						<tr class="success">
+							<th>99/01/06</th>
+							<th>獲頒Internet and computing core certification -Authorized Proctor監評證書</th>
+						</tr>
+						<tr class="info">
+							<th>98/09/25</th>
+							<th>獲頒Internet and computing core certification證書</th>
+						</tr>
+						<tr class="success">
+							<th>97/15/05</th>
+							<th>獲頒經濟部Digital Content Game Planning IT Expert證書</th>
+						</tr>
+					</tbody>
+				</table>
+		</div>
+	</div>
+	<!--//portfolio-->
+	<!--footer-->
+	<!--ResponsiveTabs-->
+			<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$('#horizontalTab').easyResponsiveTabs({
+						type: 'default', //Types: default, vertical, accordion           
+						width: 'auto', //auto or any width like 600px
+						fit: true   // 100% fit in a container
+					});
+				});	
+				$(document).ready(function () {
+					$('#horizontalTab2').easyResponsiveTabs({
+						type: 'default', //Types: default, vertical, accordion           
+						width: 'auto', //auto or any width like 600px
+						fit: true   // 100% fit in a container
+					});
+				});	
+				$(document).ready(function () {
+					$('#horizontalTab3').easyResponsiveTabs({
+						type: 'default', //Types: default, vertical, accordion           
+						width: 'auto', //auto or any width like 600px
+						fit: true   // 100% fit in a container
+					});
+				});	
+			</script>
+			<!--//ResponsiveTabs-->
+			<!-- swipe box js -->
+			<script src="js/jquery.swipebox.min.js"></script> 
+				<script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+			</script>
+			<!-- //swipe box js -->
+	<div class="footer">
+		<div class="container">
+			<!--<p>© 2016 My Resume. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>-->
+		</div>
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+
+			};
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
